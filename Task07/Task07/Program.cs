@@ -16,6 +16,22 @@ namespace Task07
             {
                 Console.WriteLine("poor");
             }
+            else if (grade == 3)
+            {
+                Console.WriteLine("satisfactory");
+            }
+            else if (grade == 4)
+            {
+                Console.WriteLine("good");
+            }
+            else if (grade == 5)
+            {
+                Console.WriteLine("very good");
+            }
+            else
+            {
+                Console.WriteLine("grade does not exist!");
+            }
         }
     }
 }
