@@ -21,6 +21,16 @@ namespace Task06
                 int result = (a * a + b);
                 Console.WriteLine("\nThe value of the expression is: {0}", result);
             }
+            else if (c < 0)
+            {
+                int result = (a - b * b);
+                Console.WriteLine("\nThe value of the expression is: {0}", result);
+            }
+            else
+            {
+                double result = (double)1 / (a - b);                                 // on else must be changed for double variable because here is denominator
+                Console.WriteLine("\nThe value of the expression is: {0}", result);
+            }
         }
     }
 }
