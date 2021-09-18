@@ -15,6 +15,7 @@ namespace Task02
             b = int.Parse(Console.ReadLine());
 
             double c;
+            c = Math.Sqrt(a * a + b * b);
         }
     }
 }
