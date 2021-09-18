@@ -17,7 +17,7 @@ namespace Task01
             h = int.Parse(Console.ReadLine());
 
             int area;
-            area = 2 * (a * b + b * h + a * h);
+            area = 2 * (a * b + b * h + a * h);     // expression to calculate the area of a cuboid
             Console.WriteLine("The area of cuboid totals = {0}", area);
         }
     }
