@@ -16,6 +16,7 @@ namespace Task02
 
             double c;
             c = Math.Sqrt(a * a + b * b);
+            Console.WriteLine("The hypotenuse in a right triangle is = {0}", c);
         }
     }
 }
