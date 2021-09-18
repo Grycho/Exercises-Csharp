@@ -18,17 +18,17 @@ namespace Task06
 
             if (c > 0)
             {
-                int result = (a * a + b);
+                int result = ((a * a) + b);
                 Console.WriteLine("\nThe value of the expression is: {0}", result);
             }
             else if (c < 0)
             {
-                int result = (a - b * b);
+                int result = ((a - b) * b);
                 Console.WriteLine("\nThe value of the expression is: {0}", result);
             }
             else if ((a - b) == 0)
             {
-                Console.WriteLine("We don't divide by ZERO!");
+                Console.WriteLine("\nWe don't divide by ZERO!");
             }
             else
             {
