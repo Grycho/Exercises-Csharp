@@ -16,7 +16,11 @@ namespace Task06
             Console.WriteLine("Enter a value for c: ");
             c = int.Parse(Console.ReadLine());
 
-
+            if (c > 0)
+            {
+                int result = (a * a + b);
+                Console.WriteLine(result);
+            }
         }
     }
 }
