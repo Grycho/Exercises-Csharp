@@ -9,15 +9,16 @@ namespace Task04
             // evaluating the value of an expression
 
             double a, b;
-            Console.WriteLine("Enter a value A: ");
+            Console.Write("Enter a value A: ");
             a = double.Parse(Console.ReadLine());
-            Console.WriteLine("Enter a value B: ");
+            Console.Write("Enter a value B: ");
             b = double.Parse(Console.ReadLine());
 
             if ((a + b)*(a + b) != 0)
             {
                 double expression;
                 expression = (a * a + b) / Math.Pow(a + b, 2);  // adding a power to an expression (a2 + b) / (a + b)2
+                Console.WriteLine("The result of the expression is{0}", expression);
             }
             else
             {
