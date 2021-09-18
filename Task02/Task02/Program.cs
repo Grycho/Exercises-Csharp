@@ -9,9 +9,9 @@ namespace Task02
             // Calculate the hypotenuse in a right triangle
 
             int a, b;
-            Console.WriteLine("Enter the length: ");
+            Console.Write("Enter the length: ");
             a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter the width: ");
+            Console.Write("Enter the width: ");
             b = int.Parse(Console.ReadLine());
 
             double c;
