@@ -8,7 +8,8 @@ namespace Task05
         {
             //Read the water temperature and view its status
 
-
+            int temp;
+            Console.WriteLine("Enter the water temperature: ");
         }
     }
 }
