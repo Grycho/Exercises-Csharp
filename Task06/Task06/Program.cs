@@ -28,7 +28,7 @@ namespace Task06
             }
             else
             {
-                double result = (double)1 / (a - b);                                 // on else must be changed for double variable because here is denominator
+                double result = (double)1 / (a - b);                                // on else must be changed for double variable because here is denominator
                 Console.WriteLine("\nThe value of the expression is: {0}", result);
             }
         }
