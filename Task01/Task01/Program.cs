@@ -8,6 +8,14 @@ namespace Task01
         {
             // a program that calculates the area of a cuboid
 
+            int a, b, h;
+            Console.WriteLine("Enter the length: ");
+            a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the width: ");
+            b = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter height: ");
+            h = int.Parse(Console.ReadLine());
+
 
         }
     }
