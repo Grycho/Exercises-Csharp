@@ -26,13 +26,13 @@ namespace Task06
                 int result = ((a - b) * b);
                 Console.WriteLine("\nThe value of the expression is: {0}", result);
             }
-            else if ((a - b) == 0)
+            else if ((a - b) == 0)                                                  // [after test] I added another "else if" for denominator if would be zero(for statement)
             {
                 Console.WriteLine("\nWe don't divide by ZERO!");
             }
             else
             {
-                double result = (double)1 / (a - b);                                // on else must be changed for double variable because here is denominator
+                double result = (double)1 / (a - b);                                // on else I changed for double variable because here is denominator
                 Console.WriteLine("\nThe value of the expression is: {0}", result);
             }
         }
