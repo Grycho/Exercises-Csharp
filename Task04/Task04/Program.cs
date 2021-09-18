@@ -13,6 +13,11 @@ namespace Task04
             a = double.Parse(Console.ReadLine());
             Console.WriteLine("Enter a value B: ");
             b = double.Parse(Console.ReadLine());
+
+            if ((a + b)*(a + b) == 0)
+            {
+
+            }
         }
     }
 }
