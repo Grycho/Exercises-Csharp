@@ -16,7 +16,8 @@ namespace Task03
             Console.WriteLine("Enter the length of the side c: ");
             c = double.Parse(Console.ReadLine());
 
-
+            double area, p = (a + b + c) / 2;
+            area = Math.Sqrt(p * (p - a) * (p - b) * (p - c));
         }
     }
 }
