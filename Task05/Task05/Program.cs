@@ -24,7 +24,7 @@ namespace Task05
             {
                 Console.WriteLine("LIQUID");
             }
-            Console.WriteLine("\nEnd of test! Push Enter for leave...");
+            Console.WriteLine("\nEnd of test! Push Enter for leave from program...");
         }
     }
 }
