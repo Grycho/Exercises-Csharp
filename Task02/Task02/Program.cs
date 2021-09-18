@@ -15,7 +15,7 @@ namespace Task02
             b = int.Parse(Console.ReadLine());
 
             double c;
-            c = Math.Sqrt(a * a + b * b);
+            c = Math.Sqrt(a * a + b * b);   // the use of an element
             Console.WriteLine("The hypotenuse in a right triangle is = {0}", c);
         }
     }
