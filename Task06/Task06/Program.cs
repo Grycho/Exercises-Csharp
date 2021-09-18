@@ -9,17 +9,17 @@ namespace Task06
             //Using variables of type double calculate the expression: a2 + b for c>0; a - b2 for c<0; 1/a-b for c=0
 
             int a, b, c;
-            Console.WriteLine("Enter a value for a: ");
+            Console.Write("Enter a value for a: ");
             a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter a value for b: ");
+            Console.Write("Enter a value for b: ");
             b = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter a value for c: ");
+            Console.Write("Enter a value for c: ");
             c = int.Parse(Console.ReadLine());
 
             if (c > 0)
             {
                 int result = (a * a + b);
-                Console.WriteLine(result);
+                Console.WriteLine("\nThe value of the expression is: {0}", result);
             }
         }
     }
