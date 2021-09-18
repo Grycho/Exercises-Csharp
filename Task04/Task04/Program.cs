@@ -18,7 +18,7 @@ namespace Task04
             {
                 double expression;
                 expression = (a * a + b) / Math.Pow(a + b, 2);  // adding a power to an expression (a2 + b) / (a + b)2
-                Console.WriteLine("The result of the expression is{0}", expression);
+                Console.WriteLine("The result of the expression is = {0}", expression);
             }
             else
             {
