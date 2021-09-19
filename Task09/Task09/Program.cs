@@ -9,7 +9,11 @@ namespace Task09
             /*The program checks if the loaded number is integer has the penultimate 
              * digit greater than 4 and displays appropriate messages, if it is and it is not.*/
 
+            int a;
+            Console.WriteLine("Give me a number: ");
+            a = int.Parse(Console.ReadLine());
 
+            
         }
     }
 }
