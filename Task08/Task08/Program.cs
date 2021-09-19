@@ -9,29 +9,37 @@ namespace Task08
             //A program that checks if a year is leap year
 
             int year;
+            bool correct;
             Console.Write("Which year do you want to check: ");
-            year = int.Parse(Console.ReadLine());
+            correct = int.TryParse(Console.ReadLine(), out year);
 
             /*Checking the year is divisible by 400. 
             * If yes, a message is displayed and goes to the line 
             * End of program other condition are not checked*/
-            if (year%400 == 0)
+            if (correct == true)
             {
-                Console.WriteLine("The year is LEAP");
-            }
-            else if (year%100 == 0)
-            {
-                Console.WriteLine("The year is NOT a leap");
-            }
-            else if (year%4 == 0)
-            {
-                Console.WriteLine("The year is LEAP");
+                if (year % 400 == 0)
+                {
+                    Console.WriteLine("The year is LEAP");
+                }
+                else if (year % 100 == 0)
+                {
+                    Console.WriteLine("The year is NOT a leap");
+                }
+                else if (year % 4 == 0)
+                {
+                    Console.WriteLine("The year is LEAP");
+                }
+                else
+                {
+                    Console.WriteLine("The year is NOT a leap");
+                }
+                Console.WriteLine("End of program!");
             }
             else
             {
-                Console.WriteLine("The year is NOT a leap");
+                Console.WriteLine("An invalid value was entered!");
             }
-            Console.WriteLine("End of program!");
         }
     }
 }
