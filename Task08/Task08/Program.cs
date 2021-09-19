@@ -8,6 +8,10 @@ namespace Task08
         {
             //A program that checks if a year is leap year
 
+            int year;
+            Console.WriteLine("Which year do you want to check: ");
+            year = int.Parse(Console.ReadLine());
+
 
         }
     }
