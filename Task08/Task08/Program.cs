@@ -11,7 +11,7 @@ namespace Task08
             int year;
             bool correct;
             Console.Write("Which year do you want to check: ");
-            correct = int.TryParse(Console.ReadLine(), out year);
+            correct = int.TryParse(Console.ReadLine(), out year);       //Protection against typed letters
 
             /*Checking the year is divisible by 400. 
             * If yes, a message is displayed and goes to the line 
