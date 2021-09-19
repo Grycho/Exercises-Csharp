@@ -30,6 +30,14 @@ namespace Task11
             {
                 correct = false;
             }
+            if (correct == true)
+            {
+                Console.WriteLine("You can build a triangle out of these sections");
+            }
+            else
+            {
+                Console.WriteLine("You can't build a triangle out of these sections");
+            }
         }
     }
 }
