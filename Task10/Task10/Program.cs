@@ -19,12 +19,12 @@ namespace Task10
             if (pieces > 50)
             {
                 payment = pieces * 30;
-                Console.WriteLine("Payment is: ", payment);
+                Console.WriteLine("Payment is: " + payment);
             }
             else
             {
                 payment = pieces * 20;
-                Console.WriteLine("Payment is: ", payment);
+                Console.WriteLine("Payment is: " + payment);
             }
         }
     }
