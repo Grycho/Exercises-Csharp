@@ -10,10 +10,17 @@ namespace Task09
              * digit greater than 4 and displays appropriate messages, if it is and it is not.*/
 
             int a;
-            Console.WriteLine("Give me a number: ");
+            Console.Write("Give me a number: ");
             a = int.Parse(Console.ReadLine());
 
-            
+            if (a % 100 > 49)
+            {
+                Console.WriteLine("YES!");
+            }
+            else
+            {
+                Console.WriteLine("NO!");
+            }
         }
     }
 }
