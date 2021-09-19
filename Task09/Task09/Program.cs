@@ -13,7 +13,7 @@ namespace Task09
             Console.Write("Give me a number: ");
             a = int.Parse(Console.ReadLine());
 
-            if (a % 100 > 49)
+            if (a % 100 > 49)               // using modulo
             {
                 Console.WriteLine("YES!");
             }
