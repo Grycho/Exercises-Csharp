@@ -14,9 +14,27 @@ namespace Task12
             int book;
             Console.Write("How many books you want to print: ");
             book = int.Parse(Console.ReadLine());
-            int whole;
+            int cost;
 
-            
+            if (book > 1000)
+            {
+                cost = book * 10;
+                Console.WriteLine("Total printing cost: " + cost);
+            }
+            else if (book > 500 && book < 1000)
+            {
+                cost = book * 12;
+                Console.WriteLine("Total printing cost: " + cost);
+            }
+            else if (book < 500 && book > 0)
+            {
+                cost = book * 15;
+                Console.WriteLine("Total printing cost: " + cost);
+            }
+            else
+            {
+                Console.WriteLine("You entered the wrong value!");
+            }
         }
     }
 }
