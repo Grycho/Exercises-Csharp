@@ -10,7 +10,6 @@ namespace Task10
              * If in a given settlement period the seller has sold more than 50 items of the product,
              * he receives 30$ for each item sold, and if he sold less, he receives 20$ for each item.
              * The input data to the program should be the number of items sold in a given settlement period.*/
-
             int pieces;
             Console.Write("How many pieces have you sold: ");
             pieces = int.Parse(Console.ReadLine());
@@ -18,12 +17,12 @@ namespace Task10
             int payment;
             if (pieces > 50)
             {
-                payment = pieces * 30;
+                payment = pieces * 30;                          //for example 51*30=1530$
                 Console.WriteLine("Payment: {0}$", payment);
             }
             else
             {
-                payment = pieces * 20;
+                payment = pieces * 20;                          //for example 49*20=980$
                 Console.WriteLine("Payment: {0}$", payment);
             }
         }
