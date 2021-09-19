@@ -21,12 +21,12 @@ namespace Task12
                 cost = book * 10;
                 Console.WriteLine("Total printing cost: " + cost);
             }
-            else if (book > 500 && book < 1000)
+            else if (book > 500 && book <= 1000)
             {
                 cost = book * 12;
                 Console.WriteLine("Total printing cost: " + cost);
             }
-            else if (book < 500 && book > 0)
+            else if (book <= 500 && book >= 0)
             {
                 cost = book * 15;
                 Console.WriteLine("Total printing cost: " + cost);
