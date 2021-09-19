@@ -9,7 +9,7 @@ namespace Task13
             //The program reads the number of the day and displays name in words. Use the switch statement.
 
             int days;
-            Console.WriteLine("Which day of the week: ");
+            Console.Write("Which day of the week(number): ");
             days = int.Parse(Console.ReadLine());
 
             switch (days)
