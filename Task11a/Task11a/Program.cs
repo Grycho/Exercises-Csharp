@@ -16,7 +16,7 @@ namespace Task11a
             Console.Write("Enter the length c: ");
             c = int.Parse(Console.ReadLine());
 
-            if (a >= b + c || b >= a + c || c >= a + b)             //using "or" function
+            if (a >= b + c || b >= a + c || c >= a + b)                     //using "or" function
             {
                 numb = false;
             }
