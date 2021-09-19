@@ -15,6 +15,19 @@ namespace Task11a
             b = int.Parse(Console.ReadLine());
             Console.Write("Enter the length c: ");
             c = int.Parse(Console.ReadLine());
+
+            if (a >= b + c || b >= a + c || c >= a + b)
+            {
+                numb = false;
+            }
+            if (numb == true)
+            {
+                Console.WriteLine("You can build a triangle out of these sections");
+            }
+            else
+            {
+                Console.WriteLine("You can't build a triangle out of these sections");
+            }
         }
     }
 }
