@@ -12,6 +12,9 @@ namespace Task08
             Console.Write("Which year do you want to check: ");
             year = int.Parse(Console.ReadLine());
 
+            /*Checking the year is divisible by 400. 
+            * If yes, a message is displayed and goes to the line 
+            * End of program other condition are not checked*/
             if (year%400 == 0)
             {
                 Console.WriteLine("The year is LEAP");
