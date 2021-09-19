@@ -12,6 +12,24 @@ namespace Task11
              * or "You can't build a triangle out of these sections".*/
             int a, b, c;
             bool correct = true;
+            Console.WriteLine("Enter the length a: ");
+            a = int.Parse(Console.ReadLine());
+            if (a <= 0)
+            {
+                correct = false;
+            }
+            Console.WriteLine("Enter the length b: ");
+            b = int.Parse(Console.ReadLine());
+            if (b <= 0)
+            {
+                correct = false;
+            }
+            Console.WriteLine("Enter the length c: ");
+            c = int.Parse(Console.ReadLine());
+            if (c <= 0)
+            {
+                correct = false;
+            }
         }
     }
 }
