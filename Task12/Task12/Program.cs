@@ -14,8 +14,8 @@ namespace Task12
             int book;
             Console.Write("How many books you want to print: ");
             book = int.Parse(Console.ReadLine());
-            int cost;
 
+            int cost;
             if (book > 1000)
             {
                 cost = book * 10;
