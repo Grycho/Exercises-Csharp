@@ -16,6 +16,16 @@ namespace Task10
             pieces = int.Parse(Console.ReadLine());
 
             int payment;
+            if (pieces > 50)
+            {
+                payment = pieces * 30;
+                Console.WriteLine("Payment is: ", payment);
+            }
+            else
+            {
+                payment = pieces * 20;
+                Console.WriteLine("Payment is: ", payment);
+            }
         }
     }
 }
