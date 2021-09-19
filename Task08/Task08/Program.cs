@@ -12,7 +12,23 @@ namespace Task08
             Console.WriteLine("Which year do you want to check: ");
             year = int.Parse(Console.ReadLine());
 
-
+            if (year%400 == 0)
+            {
+                Console.WriteLine("\nThe year is LEAP");
+            }
+            else if (year%100 == 0)
+            {
+                Console.WriteLine("\nThe year is NOT a leap");
+            }
+            else if (year%4 == 0)
+            {
+                Console.WriteLine("\nThe year is LEAP");
+            }
+            else
+            {
+                Console.WriteLine("\nThe year is NOT a leap");
+            }
+            Console.WriteLine("\nEnd of program!");
         }
     }
 }
