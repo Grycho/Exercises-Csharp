@@ -8,12 +8,6 @@ namespace Task15
         {
             //A menu program that will execute the following commands: total, difference, product, quotient, data entry, program exit.
 
-            double a, b;
-            Console.Write("Enter the FIRST number: ");
-            a = double.Parse(Console.ReadLine());
-            Console.Write("Enter the SECOND number: ");
-            b = double.Parse(Console.ReadLine());
-
             int choice;
             Console.WriteLine("\nMENU: ");
             Console.WriteLine("1. Addition");
@@ -21,6 +15,12 @@ namespace Task15
             Console.WriteLine("3. Multiplication");
             Console.WriteLine("4. Division");
             choice = int.Parse(Console.ReadLine());
+
+            double a, b;
+            Console.Write("\nEnter the FIRST number: ");
+            a = double.Parse(Console.ReadLine());
+            Console.Write("Enter the SECOND number: ");
+            b = double.Parse(Console.ReadLine());
 
             double result;
             if (choice == 1)
