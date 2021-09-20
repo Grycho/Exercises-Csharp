@@ -6,7 +6,7 @@ namespace Task16
     {
         static void Main(string[] args)
         {
-            /*A program that allows you to calculate the amount of the monthly installment 
+            /* (Percentage calculation) A program that allows you to calculate the amount of the monthly installment 
              * for the purchased equipment. The input data for the program are: 
              * the price of the goods (from 100$ to 10,000$) and the number of installments (from 6 to 48).*/
 
@@ -21,27 +21,27 @@ namespace Task16
             if (installment >= 6 && installment <= 12)
             {
                 percent = 2.5;
-                calcPercent = (1 + percent / 100);                              //Percentage calculation =2,5%
+                calcPercent = (1 + percent / 100);                              //Percentage calculation = 2,5%
                 monthlyInstall = (priceGoods * calcPercent) / installment;
                 Console.WriteLine("\nThe monthly installment is = {0}$", Math.Round(monthlyInstall,2));
             }
             else if (installment >= 13 && installment <= 24)
             {
                 percent = 5;
-                calcPercent = (1 + percent / 100);
+                calcPercent = (1 + percent / 100);                              //Percentage calculation = 5%
                 monthlyInstall = (priceGoods * calcPercent) / installment;
                 Console.WriteLine("\nThe monthly installment is = {0}$", Math.Round(monthlyInstall, 2));
             }
             else if (installment >= 25 && installment <= 48)
             {
                 percent = 10;
-                calcPercent = (1 + percent / 100);
+                calcPercent = (1 + percent / 100);                              //Percentage calculation = 10%
                 monthlyInstall = (priceGoods * calcPercent) / installment;
-                Console.WriteLine("\nThe monthly installment is = {0}$", Math.Round(monthlyInstall, 2));
+                Console.WriteLine($"\nThe monthly installment with {installment} is = {0}$", Math.Round(monthlyInstall, 2));
             }
             else
             {
-                Console.WriteLine("Incorrect data!");
+                Console.WriteLine("\nIncorrect data!");
             }
         }
     }
