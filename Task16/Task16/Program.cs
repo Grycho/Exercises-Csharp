@@ -14,8 +14,35 @@ namespace Task16
             double priceGoods;
             Console.Write("The price of the goods(from 100$ to 10,000$): ");
             priceGoods = double.Parse(Console.ReadLine());
-            Console.Write("How many installments do you want to take out a credit for(from 6 to 48): ");
+            Console.Write("\nHow many installments(from 6 to 48) do you want to take out a credit for: ");
             installment = int.Parse(Console.ReadLine());
+
+            double monthlyInstall, percent, calcPercent;
+            if (installment >= 6 && installment <= 12)
+            {
+                percent = 2.5;
+                calcPercent = (1 + percent / 100);                              //Percentage calculation =2,5%
+                monthlyInstall = (priceGoods * calcPercent) / installment;
+                Console.WriteLine("\nThe monthly installment is = {0}$", Math.Round(monthlyInstall,2));
+            }
+            else if (installment >= 13 && installment <= 24)
+            {
+                percent = 5;
+                calcPercent = (1 + percent / 100);
+                monthlyInstall = (priceGoods * calcPercent) / installment;
+                Console.WriteLine("\nThe monthly installment is = {0}$", Math.Round(monthlyInstall, 2));
+            }
+            else if (installment >= 25 && installment <= 48)
+            {
+                percent = 10;
+                calcPercent = (1 + percent / 100);
+                monthlyInstall = (priceGoods * calcPercent) / installment;
+                Console.WriteLine("\nThe monthly installment is = {0}$", Math.Round(monthlyInstall, 2));
+            }
+            else
+            {
+                Console.WriteLine("Incorrect data!");
+            }
         }
     }
 }
