@@ -11,18 +11,48 @@ namespace Task15
             double a, b;
             Console.Write("Enter the FIRST number: ");
             a = double.Parse(Console.ReadLine());
-            Console.Write("Enter the FIRST number: ");
+            Console.Write("Enter the SECOND number: ");
             b = double.Parse(Console.ReadLine());
-            int menu;
-            menu = int.Parse(Console.ReadLine());
 
-            switch (menu)
+            int choice;
+            Console.WriteLine("MENU: ");
+            Console.WriteLine("1. Addition");
+            Console.WriteLine("2. Subtraction");
+            Console.WriteLine("3. Multiplication");
+            Console.WriteLine("4. Division");
+            choice = int.Parse(Console.ReadLine());
+
+            double result;
+            if (choice == 1)
             {
-                case 1: Console.WriteLine("1. Addition"); break;
-                case 2: Console.WriteLine("2. Subtraction"); break;
-                case 3: Console.WriteLine("3. Multiplication"); break;
-                case 4: Console.WriteLine("4. Division"); break;
-                default: Console.WriteLine("Incorrect value entered!"); break;
+                result = a + b;
+                Console.WriteLine("Addition result = " + result);
+            }
+            else if (choice == 2)
+            {
+                result = a - b;
+                Console.WriteLine("Subtraction result = " + result);
+            }
+            else if (choice == 3)
+            {
+                result = a * b;
+                Console.WriteLine("Multiplication result = " + result);
+            }
+            else if (choice == 4)
+            {
+                if (b == 0)
+                {
+                    Console.WriteLine("We don't divide by ZERO!");
+                }
+                else
+                {
+                    result = a / b;
+                    Console.WriteLine("Division result = " + result);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Incorrect value entered!");
             }
         }
     }
