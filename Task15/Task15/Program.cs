@@ -9,11 +9,12 @@ namespace Task15
             //A menu program that will execute the following commands: total, difference, product, quotient, data entry, program exit.
 
             int choice;
-            Console.WriteLine("\nMENU: ");
+            Console.WriteLine("MENU");
             Console.WriteLine("1. Addition");
             Console.WriteLine("2. Subtraction");
             Console.WriteLine("3. Multiplication");
             Console.WriteLine("4. Division");
+            Console.Write("\nSelect an action: ");
             choice = int.Parse(Console.ReadLine());
 
             double a, b;
