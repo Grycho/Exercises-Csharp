@@ -23,21 +23,21 @@ namespace Task16
                 percent = 2.5;
                 calcPercent = (1 + percent / 100);                          //Percentage calculation = 2,5%
                 monthlyInstall = (priceGoods * calcPercent) / installment;
-                Console.WriteLine($"\nThe monthly installment(out of a total {installment} installments) is = " + "{0}$", Math.Round(monthlyInstall, 2));
+                Console.WriteLine("\nThe monthly installment is = {0}$", Math.Round(monthlyInstall, 2));
             }
             else if (installment >= 13 && installment <= 24)
             {
                 percent = 5;
                 calcPercent = (1 + percent / 100);                          //Percentage calculation = 5%
                 monthlyInstall = (priceGoods * calcPercent) / installment;
-                Console.WriteLine($"\nThe monthly installment(out of a total {installment} installments) is = " + "{0}$", Math.Round(monthlyInstall, 2));
+                Console.WriteLine("\nThe monthly installment is = {0}$", Math.Round(monthlyInstall, 2));
             }
             else if (installment >= 25 && installment <= 48)
             {
                 percent = 10;
                 calcPercent = (1 + percent / 100);                          //Percentage calculation = 10%
                 monthlyInstall = (priceGoods * calcPercent) / installment;
-                Console.WriteLine($"\nThe monthly installment(out of a total {installment} installments) is = " + "{0}$", Math.Round(monthlyInstall, 2));
+                Console.WriteLine("\nThe monthly installment is = {0}$", Math.Round(monthlyInstall, 2));
             }
             else
             {
