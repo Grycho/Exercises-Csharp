@@ -47,13 +47,13 @@ namespace Task15
                 }
                 else
                 {
-                    result = a / b;
+                    result = a / b; 
                     Console.WriteLine("\nDivision result = " + result);
                 }
             }
             else
             {
-                Console.WriteLine("\nIncorrect value entered!");
+                Console.WriteLine("\nIncorrect value entered!"); 
             }
         }
     }
