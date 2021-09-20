@@ -15,7 +15,7 @@ namespace Task15
             b = double.Parse(Console.ReadLine());
 
             int choice;
-            Console.WriteLine("MENU: ");
+            Console.WriteLine("\nMENU: ");
             Console.WriteLine("1. Addition");
             Console.WriteLine("2. Subtraction");
             Console.WriteLine("3. Multiplication");
@@ -26,33 +26,33 @@ namespace Task15
             if (choice == 1)
             {
                 result = a + b;
-                Console.WriteLine("Addition result = " + result);
+                Console.WriteLine("\nAddition result = " + result);
             }
             else if (choice == 2)
             {
                 result = a - b;
-                Console.WriteLine("Subtraction result = " + result);
+                Console.WriteLine("\nSubtraction result = " + result);
             }
             else if (choice == 3)
             {
                 result = a * b;
-                Console.WriteLine("Multiplication result = " + result);
+                Console.WriteLine("\nMultiplication result = " + result);
             }
             else if (choice == 4)
             {
                 if (b == 0)
                 {
-                    Console.WriteLine("We don't divide by ZERO!");
+                    Console.WriteLine("\nWe don't divide by ZERO!");
                 }
                 else
                 {
                     result = a / b;
-                    Console.WriteLine("Division result = " + result);
+                    Console.WriteLine("\nDivision result = " + result);
                 }
             }
             else
             {
-                Console.WriteLine("Incorrect value entered!");
+                Console.WriteLine("\nIncorrect value entered!");
             }
         }
     }
