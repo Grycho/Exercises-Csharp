@@ -16,7 +16,7 @@ namespace Task17
             Console.Write("Enter SECOND number: ");
             num2 = float.Parse(Console.ReadLine());
 
-            Console.Write("\nExpression symbol: ");
+            Console.Write("Expression symbol: ");
             string sign = (Console.ReadLine());
 
             switch (sign)
@@ -27,16 +27,16 @@ namespace Task17
                 case "/": 
                     if (num2 == 0) 
                     { 
-                        Console.WriteLine("We don't divide by ZERO!"); 
+                        Console.WriteLine("\nWe don't divide by ZERO!"); 
                     }
                     else
                     {
                         result = num1 / num2;
                     }
                     break;
-                default: Console.WriteLine("Option out of range!"); break;
+                default: Console.WriteLine("\nOption out of range!"); break;
             }
-            Console.WriteLine("Result = " + result);
+            Console.WriteLine("\nResult = " + result);
         }
     }
 }
