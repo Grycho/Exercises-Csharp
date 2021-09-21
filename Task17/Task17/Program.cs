@@ -15,6 +15,7 @@ namespace Task17
             num1 = double.Parse(Console.ReadLine());
             Console.Write("Enter SECOND number: ");
             num2 = double.Parse(Console.ReadLine());
+
             char sign;
             Console.Write("Expression symbol: ");
             sign = char.Parse(Console.ReadLine());
