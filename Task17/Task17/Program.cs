@@ -14,16 +14,26 @@ namespace Task17
             Console.Write("Enter FIRST number: ");
             a = double.Parse(Console.ReadLine());
             Console.Write("Enter SECOND number: ");
-            a = double.Parse(Console.ReadLine());
+            b = double.Parse(Console.ReadLine());
 
             Console.Write("\nExpression symbol: ");
             sign = double.Parse(Console.ReadLine());
+
             switch (sign)
             {
                 case '+': Console.WriteLine("+"); break;
                 case '-': Console.WriteLine("-"); break;
                 case '*': Console.WriteLine("*"); break;
-                case '/': Console.WriteLine("/"); break;
+                case '/': 
+                    if (b == 0) 
+                    { 
+                        Console.WriteLine("We don't divide by ZERO!"); 
+                    }
+                    else
+                    {
+                        Console.WriteLine("/");
+                    }
+                    break;
                 default: Console.WriteLine("Option out of range!"); break;
             }
         }
