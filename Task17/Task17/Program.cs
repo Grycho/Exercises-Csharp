@@ -10,7 +10,7 @@ namespace Task17
              * The action sign is to be entered with one of the signs + - * / 
              * The program only performs the indicated operation. Please use the switch statement*/
 
-            float num1, num2, result=0;
+            float num1, num2, result;
             Console.Write("Enter FIRST number: ");
             num1 = float.Parse(Console.ReadLine());
             Console.Write("Enter SECOND number: ");
