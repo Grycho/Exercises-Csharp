@@ -10,32 +10,33 @@ namespace Task17
              * The action sign is to be entered with one of the signs + - * / 
              * The program only performs the indicated operation. Please use the switch statement*/
 
-            double a, b, sign;
+            float num1, num2, result=0;
             Console.Write("Enter FIRST number: ");
-            a = double.Parse(Console.ReadLine());
+            num1 = float.Parse(Console.ReadLine());
             Console.Write("Enter SECOND number: ");
-            b = double.Parse(Console.ReadLine());
+            num2 = float.Parse(Console.ReadLine());
 
             Console.Write("\nExpression symbol: ");
-            sign = double.Parse(Console.ReadLine());
+            string sign = (Console.ReadLine());
 
             switch (sign)
             {
-                case '+': Console.WriteLine("+"); break;
-                case '-': Console.WriteLine("-"); break;
-                case '*': Console.WriteLine("*"); break;
-                case '/': 
-                    if (b == 0) 
+                case "+": result = num1 + num2; break;
+                case "-": result = num1 - num2; break;
+                case "*": result = num1 * num2; break;
+                case "/": 
+                    if (num2 == 0) 
                     { 
                         Console.WriteLine("We don't divide by ZERO!"); 
                     }
                     else
                     {
-                        Console.WriteLine("/");
+                        result = num1 / num2;
                     }
                     break;
                 default: Console.WriteLine("Option out of range!"); break;
             }
+            Console.WriteLine("Result = " + result);
         }
     }
 }
