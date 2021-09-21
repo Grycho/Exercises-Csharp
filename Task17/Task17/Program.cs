@@ -10,29 +10,28 @@ namespace Task17
              * The action sign is to be entered with one of the signs + - * / 
              * The program only performs the indicated operation. Please use the switch statement*/
 
-            float num1, num2, result;
+            double num1, num2;
             Console.Write("Enter FIRST number: ");
-            num1 = float.Parse(Console.ReadLine());
+            num1 = double.Parse(Console.ReadLine());
             Console.Write("Enter SECOND number: ");
-            num2 = float.Parse(Console.ReadLine());
-
+            num2 = double.Parse(Console.ReadLine());
+            char sign;
             Console.Write("Expression symbol: ");
-            string sign = (Console.ReadLine());
+            sign = char.Parse(Console.ReadLine());
 
             switch (sign)
             {
-                case "+": result = num1 + num2; Console.WriteLine("\nResult = " + result); break;
-                case "-": result = num1 - num2; Console.WriteLine("\nResult = " + result); break;
-                case "*": result = num1 * num2; Console.WriteLine("\nResult = " + result); break;
-                case "/": 
+                case '+': Console.WriteLine("\nResult = {0}", num1 + num2); break;
+                case '-': Console.WriteLine("\nResult = {0}", num1 - num2); break;
+                case '*': Console.WriteLine("\nResult = {0}", num1 * num2); break;
+                case '/': 
                     if (num2 == 0) 
                     { 
                         Console.WriteLine("\nWe don't divide by ZERO!"); 
                     }
                     else
                     {
-                        result = num1 / num2;
-                        Console.WriteLine("\nResult = " + result);
+                        Console.WriteLine("\nResult = {0}", num1 / num2);
                     }
                     break;
                 default: Console.WriteLine("\nOption out of range!"); break;
