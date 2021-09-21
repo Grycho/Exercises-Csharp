@@ -10,7 +10,11 @@ namespace Task17
              * The action sign is to be entered with one of the signs + - * / 
              * The program only performs the indicated operation. Please use the switch statement*/
 
-
+            double a, b, sign;
+            Console.WriteLine("Enter FIRST number: ");
+            a = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter SECOND number: ");
+            a = double.Parse(Console.ReadLine());
         }
     }
 }
