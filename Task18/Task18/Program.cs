@@ -14,32 +14,49 @@ namespace Task18
             Console.WriteLine("1. Unit of LENGTH");
             Console.WriteLine("2. Unit of MASS");
             Console.WriteLine("3. Unit of VOLUME");
-            Console.Write("\nSelect: ");
+            Console.Write("Select: ");
             int menu;
             menu = int.Parse(Console.ReadLine());
             switch (menu)
             {
                 case 1: 
-                    Console.WriteLine("1. Miles -> Kilometers"); 
+                    Console.WriteLine("\n1. Miles -> Kilometers"); 
                     Console.WriteLine("2. Jards -> Meters"); 
                     Console.WriteLine("3. Foots -> Meters"); 
                     Console.WriteLine("4. Inches -> Centimeters");
+                    Console.Write("Select: ");
                     double length;
                     length = double.Parse(Console.ReadLine());
                     switch (length)
                     {
                         case 1:  ;break;
-                        default:  ;break;
+                        default: Console.WriteLine("\nSelected option out of range!"); break;
                     }
                     ; break;
                 case 2: 
-                    Console.WriteLine();
-                    Console.WriteLine();
-                    Console.WriteLine();
+                    Console.WriteLine("\n1. Pounds -> Kilograms");
+                    Console.WriteLine("2. Ounces -> Grams");
+                    Console.WriteLine("3. Carats -> Grams");
+                    Console.Write("Select: ");
+                    double mass;
+                    mass = double.Parse(Console.ReadLine());
+                    switch (mass)
+                    {
+                        case 1:  ;break;
+                        default: Console.WriteLine("\nSelected option out of range!"); break;
+                    }
                     break;
                 case 3: 
-                    Console.WriteLine();
-                    Console.WriteLine();
+                    Console.WriteLine("\n1. Gallons -> Liters");
+                    Console.WriteLine("2. Barrels -> Liters");
+                    Console.Write("Select: ");
+                    double volume;
+                    volume = double.Parse(Console.ReadLine());
+                    switch (volume)
+                    {
+                        case 1:  ; break;
+                        default: Console.WriteLine("\nSelected option out of range!"); break;
+                    }
                     break;
                 default: Console.WriteLine("\nSelected option out of range!"); break;
             }
