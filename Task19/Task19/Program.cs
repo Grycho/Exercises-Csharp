@@ -12,27 +12,26 @@ namespace Task19
              *If the value is incorrect, the price cost is -1*/
 
             int km;
-            Console.Write("How many kilometers do you want to drive: ");
+            Console.Write("How many kilometers do you want travel: ");
             km = int.Parse(Console.ReadLine());
             double ticket;
-            if (km >= 0 && km <= 10)
+            if (km >= 0) 
+                if (km <= 10)
             {
                 ticket = 2;
                 Console.WriteLine($"\nAmount for travel {km}km is: " + "{0}$", ticket);
             }
-            else
+            if (km >= 11)
+                if (km <= 30)
             {
-                Console.WriteLine("\nTicket price: -1$");
-            }
-            if (km >= 11 && km <= 30)
-            {
-                ticket = km * (1 + 0.10);
+                ticket = 1 + (km * 0.10);
                 Console.WriteLine($"\nAmount for travel {km}km is: " + "{0}$", Math.Round(ticket,2));
             }
-            else
-            {
-                Console.WriteLine("\nTicket price: -1$");
-            }
+            if (km > 30)
+                {
+                    ticket = 1 + (km * 0.08);
+                    Console.WriteLine($"\nAmount for travel {km}km is: " + "{0}$", Math.Round(ticket, 2));
+                }
         }
     }
 }
