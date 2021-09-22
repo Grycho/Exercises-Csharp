@@ -15,23 +15,31 @@ namespace Task19
             Console.Write("How many kilometers do you want travel: ");
             km = int.Parse(Console.ReadLine());
             double ticket;
-            if (km >= 0) 
-                if (km <= 10)
+            if (km >= 0 && km <= 10)
             {
                 ticket = 2;
                 Console.WriteLine($"\nAmount for travel {km}km is: " + "{0}$", ticket);
             }
-            if (km >= 11)
-                if (km <= 30)
+            else
             {
-                ticket = 1 + (km * 0.10);
-                Console.WriteLine($"\nAmount for travel {km}km is: " + "{0}$", Math.Round(ticket,2));
-            }
-            if (km > 30)
+                if (km >= 11 && km <= 30)
                 {
-                    ticket = 1 + (km * 0.08);
+                    ticket = 1 + (km * 0.10);
                     Console.WriteLine($"\nAmount for travel {km}km is: " + "{0}$", Math.Round(ticket, 2));
                 }
+                else
+                {
+                    if (km > 30)
+                    {
+                        ticket = 1 + (km * 0.08);
+                        Console.WriteLine($"\nAmount for travel {km}km is: " + "{0}$", Math.Round(ticket, 2));
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nTicket price: -1");
+                    }
+                }
+            }
         }
     }
 }
