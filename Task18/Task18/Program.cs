@@ -67,17 +67,17 @@ namespace Task18
                         case 1:
                             Console.Write("\nHow many Pounds convert: ");
                             kilo = double.Parse(Console.ReadLine());
-                            Console.WriteLine("\nIt is {0} kilograms", Math.Round(pound * kilo,4));
+                            Console.WriteLine("\nIt is {0} kilograms", Math.Round(pound * kilo,3));
                             break;
                         case 2:
                             Console.Write("\nHow many Ounces convert: ");
                             gr = double.Parse(Console.ReadLine());
-                            Console.WriteLine("\nIt is {0} grams", Math.Round(ounc * gr,4));
+                            Console.WriteLine("\nIt is {0} grams", Math.Round(ounc * gr,2));
                             break;
                         case 3:
                             Console.Write("\nHow many Carats convert: ");
                             gr = double.Parse(Console.ReadLine());
-                            Console.WriteLine("\nIt is {0} grams", (carat * gr));
+                            Console.WriteLine("\nIt is {0} grams", Math.Round(carat * gr,2));
                             break;
                         default: Console.WriteLine("\nSelected option out of range!"); break;
                     }
