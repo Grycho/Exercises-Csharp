@@ -17,12 +17,21 @@ namespace Task19
             double ticket;
             if (km >= 0 && km <= 10)
             {
-                ticket = km * 2;
-                Console.WriteLine($"\nAmount for travel {km}km is: {0}$", ticket);
+                ticket = 2;
+                Console.WriteLine($"\nAmount for travel {km}km is: " + "{0}$", ticket);
             }
             else
             {
-                Console.WriteLine("Ticket price: -1$");
+                Console.WriteLine("\nTicket price: -1$");
+            }
+            if (km >= 11 && km <= 30)
+            {
+                ticket = km * (1 + 0.10);
+                Console.WriteLine($"\nAmount for travel {km}km is: " + "{0}$", Math.Round(ticket,2));
+            }
+            else
+            {
+                Console.WriteLine("\nTicket price: -1$");
             }
         }
     }
