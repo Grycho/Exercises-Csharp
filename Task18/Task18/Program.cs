@@ -27,7 +27,8 @@ namespace Task18
                     Console.Write("Select: ");
                     double length;
                     length = double.Parse(Console.ReadLine());
-                    double miles=1.61, jards=0.9144, foots=0.3048, inches=2.54, meters, centimeters, kilometers;
+                    double miles = 1.61, jards = 0.9144, foots = 0.3048, inches = 2.54;
+                    double meters, centimeters, kilometers;
                     switch (length)
                     {
                         case 1:
@@ -38,17 +39,17 @@ namespace Task18
                         case 2:
                             Console.Write("\nHow many Jards convert: ");
                             meters = double.Parse(Console.ReadLine());
-                            Console.WriteLine("\nIt is {0} meters", (jards * meters));
+                            Console.WriteLine("\nIt is {0} meters", jards * meters);
                             break;
                         case 3:
                             Console.Write("\nHow many Foots convert: ");
                             meters = double.Parse(Console.ReadLine());
-                            Console.WriteLine("\nIt is {0} meters", (foots * meters));
+                            Console.WriteLine("\nIt is {0} meters", foots * meters);
                             break;
                         case 4:
                             Console.Write("\nHow many Inches convert: ");
                             centimeters = double.Parse(Console.ReadLine());
-                            Console.WriteLine("\nIt is {0} centimeters", (inches * centimeters));
+                            Console.WriteLine("\nIt is {0} centimeters", inches * centimeters);
                             break;
                         default: Console.WriteLine("\nSelected option out of range!"); break;
                     }
@@ -60,9 +61,24 @@ namespace Task18
                     Console.Write("Select: ");
                     double mass;
                     mass = double.Parse(Console.ReadLine());
+                    double pounds = 0.45359237, ounces = 28.3495231, carats = 0.2, kilo, grams;
                     switch (mass)
                     {
-                        case 1:  ;break;
+                        case 1:
+                            Console.Write("\nHow many Pounds convert: ");
+                            kilo = double.Parse(Console.ReadLine());
+                            Console.WriteLine("\nIt is {0} kilograms", pounds * kilo);
+                            break;
+                        case 2:
+                            Console.Write("\nHow many Ounces convert: ");
+                            grams = double.Parse(Console.ReadLine());
+                            Console.WriteLine("\nIt is {0} grams", ounces * grams);
+                            break;
+                        case 3:
+                            Console.Write("\nHow many Carats convert: ");
+                            grams = double.Parse(Console.ReadLine());
+                            Console.WriteLine("\nIt is {0} grams", carats * grams);
+                            break;
                         default: Console.WriteLine("\nSelected option out of range!"); break;
                     }
                     break;
@@ -72,9 +88,19 @@ namespace Task18
                     Console.Write("Select: ");
                     double volume;
                     volume = double.Parse(Console.ReadLine());
+                    double gallons = 4.54609, barrels = 158.987295, liters;
                     switch (volume)
                     {
-                        case 1:  ; break;
+                        case 1:
+                            Console.Write("\nHow many Gallons convert: ");
+                            liters = double.Parse(Console.ReadLine());
+                            Console.WriteLine("\nIt is {0} meters", gallons * liters);
+                            break;
+                        case 2:
+                            Console.Write("\nHow many Inches convert: ");
+                            liters = double.Parse(Console.ReadLine());
+                            Console.WriteLine("\nIt is {0} centimeters", barrels * liters);
+                            break;
                         default: Console.WriteLine("\nSelected option out of range!"); break;
                     }
                     break;
