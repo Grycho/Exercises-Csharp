@@ -27,15 +27,28 @@ namespace Task18
                     Console.Write("Select: ");
                     double length;
                     length = double.Parse(Console.ReadLine());
-                    double jards=0.9144, foots=0.3048, inches=2.54, kilometers, meters, centimeters;
-
+                    double miles=1.61, jards=0.9144, foots=0.3048, inches=2.54, meters, centimeters, kilometers;
                     switch (length)
                     {
                         case 1:
-                            Console.WriteLine("");
-                            double miles = 1.61;
+                            Console.Write("\nHow many Miles convert: ");
                             kilometers = double.Parse(Console.ReadLine());
-                            Console.WriteLine("\nResult = {0}", (miles * kilometers)); 
+                            Console.WriteLine("\nIt is {0} kilometers", miles * kilometers);
+                            break;
+                        case 2:
+                            Console.Write("\nHow many Jards convert: ");
+                            meters = double.Parse(Console.ReadLine());
+                            Console.WriteLine("\nIt is {0} meters", (jards * meters));
+                            break;
+                        case 3:
+                            Console.Write("\nHow many Foots convert: ");
+                            meters = double.Parse(Console.ReadLine());
+                            Console.WriteLine("\nIt is {0} meters", (foots * meters));
+                            break;
+                        case 4:
+                            Console.Write("\nHow many Inches convert: ");
+                            centimeters = double.Parse(Console.ReadLine());
+                            Console.WriteLine("\nIt is {0} centimeters", (inches * centimeters));
                             break;
                         default: Console.WriteLine("\nSelected option out of range!"); break;
                     }
