@@ -25,11 +25,12 @@ namespace Task18
                     Console.WriteLine("3. Foots -> Meters"); 
                     Console.WriteLine("4. Inches -> Centimeters");
                     Console.Write("Select: ");
-                    double length;
+                    double length, result;
                     length = double.Parse(Console.ReadLine());
+                    double miles=1.61, jards=0.9144, foots=0.3048, inches=2.54, meters, centimeters;
                     switch (length)
                     {
-                        case 1:  ;break;
+                        case 1: Console.WriteLine("Result ={0}", (miles * 1)); break;
                         default: Console.WriteLine("\nSelected option out of range!"); break;
                     }
                     ; break;
