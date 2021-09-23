@@ -14,7 +14,18 @@ namespace Task23
             Console.WriteLine("Enter second number: ");
             b = int.Parse(Console.ReadLine());
 
-
+            while (a != b)
+            {
+                if (a > b)
+                {
+                    a -= b;
+                }
+                else
+                {
+                    b -= a;
+                }
+                Console.WriteLine("Greatest Common Divisor: " + a);
+            }
         }
     }
 }
