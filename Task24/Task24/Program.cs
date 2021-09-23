@@ -19,7 +19,7 @@ namespace Task24
                 sum += num % 10;
                 num /= 10;
             }
-            Console.WriteLine("Total is: " + sum);
+            Console.WriteLine("\nTotal is: " + sum);
         }
     }
 }
