@@ -19,7 +19,7 @@ namespace Task27
                 {
                     sum++;
                 }
-            } while (num != 0);
+            } while (num != 0); 
             Console.WriteLine("\nYou entered '0' program is end - Numbers greater than 15 was: {0}", sum);
         }
     }
