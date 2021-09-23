@@ -18,6 +18,14 @@ namespace Task25
             {
                 if (x % i == 0) frst = false;
             }
+            if (frst)
+            {
+                Console.WriteLine("Is a prime number.");
+            }
+            else
+            {
+                Console.WriteLine("It is NOT a prime number!");
+            }
         }
     }
 }
