@@ -10,7 +10,7 @@ namespace Task25
              *Minimize the number of operations dividing*/
 
             int x;
-            Console.WriteLine("Input a number: ");
+            Console.Write("Input a number: ");
             x = int.Parse(Console.ReadLine());
             bool frst = true;
 
@@ -20,11 +20,11 @@ namespace Task25
             }
             if (frst)
             {
-                Console.WriteLine("Is a prime number.");
+                Console.WriteLine("\nIs a prime number.");
             }
             else
             {
-                Console.WriteLine("It is NOT a prime number!");
+                Console.WriteLine("\nIt is NOT a prime number!");
             }
         }
     }
