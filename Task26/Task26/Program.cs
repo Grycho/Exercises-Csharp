@@ -9,7 +9,7 @@ namespace Task26
             //A program that draws a "Christmas tree" composed of asterisks (*) in the console.
 
             int num;
-            Console.WriteLine("How high should the christmas tree be?");
+            Console.WriteLine("How high should be the christmas tree?");
             Console.Write("Input how many lines: ");
             num = int.Parse(Console.ReadLine());
 
@@ -24,7 +24,9 @@ namespace Task26
                 {
                     Console.Write("*");
                 }
-
+                Console.WriteLine();
+                manySpaces -= 1;
+                manyStars += 2;
             }
         }
     }
