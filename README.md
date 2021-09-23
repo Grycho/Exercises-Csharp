@@ -33,3 +33,17 @@ Mainly console applications.
 - The program reads the number of the day and displays name in words.
 ### Task14
 - Program which a given numerical month will indicate how many days have elapsed from the beginning of the year.
+### Task15
+- A menu program that will execute the following commands: total, difference, product, quotient, data entry.
+### Task16
+- [Percentage Calculation] A program that allows you to calculate the amount of the monthly installment for the purchased equipment.
+### Task17
+- Program that reads two numbers, the sign of an action, and on that basis did a computation.
+### Task18
+- Program to convert Anglo-Saxon units of measurement into standard. Use the switch selection statement.
+### Task19
+- Calculating program price of a Bus ticket depends on the length of the route according to the following scheme.
+### Task20
+- [do...while loop] A program that will display the numbers from 0 to 1000.
+### Task21
+- A program that loads numbers for as long as the number is in the range -100 to 100. Calculates total numbers loaded.
