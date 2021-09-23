@@ -9,7 +9,12 @@ namespace Task24
             /*Program for calculating the sum of the digits 
              *of the decimal expansion for a given natural number.*/
 
-            
+            int num;
+            Console.WriteLine("Input a number: ");
+            num = int.Parse(Console.ReadLine());
+
+            int sum = 0;
+
         }
     }
 }
