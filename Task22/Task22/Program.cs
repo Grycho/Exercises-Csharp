@@ -20,6 +20,11 @@ namespace Task22
                 a = b;
                 b = c;
             }
+
+            for (int i = a; i <= b; i++)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }
