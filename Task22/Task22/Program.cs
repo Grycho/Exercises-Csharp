@@ -8,15 +8,15 @@ namespace Task22
         {
             //Read two numbers. Display from less to greater.
 
-            int a, b, c;
+            int a, b;
             Console.Write("Enter first number: ");
             a = int.Parse(Console.ReadLine());
             Console.Write("Enter second number: ");
             b = int.Parse(Console.ReadLine());
 
-            if (a < b)
+            if (a > b)
             {
-                c = a;
+                int c = a;
                 a = b;
                 b = c;
             }
