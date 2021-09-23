@@ -8,6 +8,12 @@ namespace Task23
         {
             //Calculating the Greatest Common Divisor.
 
+            int a, b;
+            Console.WriteLine("Enter first number: ");
+            a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter second number: ");
+            b = int.Parse(Console.ReadLine());
+
 
         }
     }
