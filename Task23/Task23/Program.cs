@@ -9,9 +9,9 @@ namespace Task23
             //Calculating the Greatest Common Divisor.
 
             int a, b;
-            Console.WriteLine("Enter first number: ");
+            Console.Write("Input first number: ");
             a = int.Parse(Console.ReadLine());
-            Console.WriteLine("Enter second number: ");
+            Console.Write("Input second number: ");
             b = int.Parse(Console.ReadLine());
 
             while (a != b)
@@ -24,7 +24,7 @@ namespace Task23
                 {
                     b -= a;
                 }
-                Console.WriteLine("Greatest Common Divisor: " + a);
+                Console.WriteLine("GCD is: " + a);
             }
         }
     }
