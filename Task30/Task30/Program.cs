@@ -8,7 +8,7 @@ namespace Task30
         {
             //Program counts the sum of 1000 random values.
 
-            Random draws = new Random();
+            Random draws = new Random();            //the function randomizes from numbers
             int[] tab = new int[1000];
 
             for (int i = 0; i < 1000; i++)
@@ -20,7 +20,7 @@ namespace Task30
             {
                 sum += element;
             }
-            Console.WriteLine(sum);
+            Console.WriteLine("\nRandoms: " + sum);
         }
     }
 }
