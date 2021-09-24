@@ -8,6 +8,9 @@ namespace Task30
         {
             //Program counts the sum of 1000 random values.
 
+            Random draws = new Random();
+            int[] tab = new int[1000];
+
 
         }
     }
