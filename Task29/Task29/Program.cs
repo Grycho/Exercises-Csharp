@@ -8,6 +8,7 @@ namespace Task29
         {
             //Sum of values in cells. Required auxiliary variable for calculating sum
 
+            Console.WriteLine("Enter 10 numbers:");
             int[] tab = new int[10];
             for (int i = 0; i < 10; i++)
             {
@@ -18,7 +19,7 @@ namespace Task29
             {
                 sum += element;
             }
-            Console.WriteLine("Sum of values: "+ sum);
+            Console.WriteLine("\nSum of values: "+ sum);
         }
     }
 }
