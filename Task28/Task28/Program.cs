@@ -8,6 +8,7 @@ namespace Task28
         {
             //Displaying even numbers from the keyboard.
 
+            Console.WriteLine("Enter 10 numbers:");
             int[] tab = new int[10];
             for (int i = 0; i < 10; i++)
             {
@@ -17,7 +18,7 @@ namespace Task28
             {
                 if(tab[i] % 2 == 0)
                 {
-                    Console.WriteLine("\nEven numbers: " + tab[i]);
+                    Console.Write("\nEven number: {0}", tab[i]);
                 }
             }
         }
