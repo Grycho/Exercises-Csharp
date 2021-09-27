@@ -8,7 +8,7 @@ namespace Task32
         {
             //Program draws 1000 numbers from the range (1,10000) and displays the numbers above the average.
 
-            Random Numb = new Random();
+            Random Numb = new();
             int[] tab = new int[1000];
 
             for (int i = 0; i < 1000; i++)
