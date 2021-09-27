@@ -22,6 +22,10 @@ namespace Task34
                     tab[i] = tab[i] + 10000;
                 }
             }
+            foreach (var Added in tab)
+            {
+                Console.WriteLine(Added);
+            }
         }
     }
 }
