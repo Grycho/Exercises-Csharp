@@ -26,7 +26,7 @@ namespace Task32
             foreach (var AboveAverage in tab)
             {
                 if (AboveAverage > Average)
-                    Console.WriteLine("\nAbove average: " + AboveAverage);
+                    Console.WriteLine("Above average: " + AboveAverage);
             }
         }
     }
