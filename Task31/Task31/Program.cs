@@ -20,7 +20,7 @@ namespace Task31
             {
                 if (Max < Element) Max = Element;
             }
-            Console.WriteLine(Max);
+            Console.WriteLine("Maximum: " + Max);
         }
     }
 }
