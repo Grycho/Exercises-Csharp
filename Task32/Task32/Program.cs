@@ -20,7 +20,8 @@ namespace Task32
             {
                 Sum += Element;
             }
-
+            double Average = (double)Sum / 1000;
+            Console.WriteLine("Average: " + Average);
         }
     }
 }
