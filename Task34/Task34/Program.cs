@@ -15,6 +15,13 @@ namespace Task34
             {
                 tab[i] = Numb.Next(-100, 1000);
             }
+            for (int i = 0; i < 1000; i++)
+            {
+                if (tab[i] < 100)
+                {
+                    tab[i] = tab[i] + 10000;
+                }
+            }
         }
     }
 }
