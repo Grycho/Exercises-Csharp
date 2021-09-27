@@ -18,8 +18,15 @@ namespace Task33
             int Max = tab[0];
             foreach (var Element in tab)
             {
-
+                if (Element > Max) Max = Element;
             }
+            int HowManyMax = 0;
+            foreach (var HowMany in tab)
+            {
+                if (HowMany == Max)
+                    HowManyMax++;
+            }
+            Console.WriteLine("Maximum {0} has appeared {1} times", Max, HowManyMax);
         }
     }
 }
