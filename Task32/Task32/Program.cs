@@ -22,6 +22,12 @@ namespace Task32
             }
             double Average = (double)Sum / 1000;
             Console.WriteLine("Average: " + Average);
+
+            foreach (var AboveAverage in tab)
+            {
+                if (AboveAverage > Average)
+                    Console.WriteLine("\nAbove average: " + AboveAverage);
+            }
         }
     }
 }
