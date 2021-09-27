@@ -14,6 +14,13 @@ namespace Task31
             {
                 tab[i] = Draws.Next(1, 100000);
             }
+
+            int Max = tab[0];
+            foreach (var Element in tab)
+            {
+                if (Max < Element) Max = Element;
+            }
+            Console.WriteLine(Max);
         }
     }
 }
