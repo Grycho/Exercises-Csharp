@@ -11,10 +11,16 @@ namespace Task32
             Random Numb = new Random();
             int[] tab = new int[1000];
 
-            for (int i = 0; i < length; i++)
+            for (int i = 0; i < 1000; i++)
             {
-
+                tab[i] = Numb.Next(1, 10000);
             }
+            int Sum = 0;
+            foreach (var Element in tab)
+            {
+                Sum += Element;
+            }
+
         }
     }
 }
