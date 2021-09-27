@@ -25,6 +25,10 @@ namespace Task34
             foreach (var Added in tab)
             {
                 Console.WriteLine(Added);
+                if (Added > 10000)
+                {
+                    Console.WriteLine("This number: " + Added);
+                }
             }
         }
     }
