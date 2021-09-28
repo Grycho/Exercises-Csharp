@@ -31,7 +31,7 @@ namespace Task36
             int SumOdd = 0;
             foreach (var Element2 in odd)
             {
-                if (Element2 % 2 == 1)
+                if (Element2 % 2 == 1 || Element2 < 0)
                 {
                     SumOdd += Element2;
                 }
