@@ -29,11 +29,11 @@ namespace Task36
             Console.WriteLine("\nEven sum: " + SumEven);
 
             int SumOdd = 0;
-            foreach (var Element2 in odd)
+            foreach (var Element in odd)
             {
-                if (Element2 % 2 == 1 || Element2 < 0)
+                if (Element % 2 == 1 || Element < 0)
                 {
-                    SumOdd += Element2;
+                    SumOdd += Element;
                 }
             }
             Console.WriteLine("\nOdd sum: " + SumOdd);
