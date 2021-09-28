@@ -17,11 +17,11 @@ namespace Task35
             }
             for (int i = 0; i < 30; i+=2)
             {
-                Console.WriteLine();
+                Console.WriteLine(tab[i]);
             }
             for (int i = 1; i < 30; i+=2)
             {
-                Console.WriteLine();
+                Console.WriteLine(tab[i]);
             }
         }
     }
