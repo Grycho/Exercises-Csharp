@@ -6,15 +6,15 @@ namespace Task36
     {
         static void Main(string[] args)
         {
-            /*Program is to draw 1000 numbers <-20000,20000> to the array to calculate 
-             *the span of the set (difference between the maximum and minimum).*/
+            /*The program will draw 3000 numbers <-1000,1000> and calculate 
+             *separately the sum of even cells from even and odd cells with odd indices.*/
 
             Random Numb = new();
-            int[] tab = new int[1000], Min, Max;
+            int[] tab = new int[3000];
 
-            for (int i = 0; i < 1000; i++)
+            for (int i = 0; i < 3000; i++)
             {
-                tab[i] = Numb.Next(-20000, 20000);
+                tab[i] = Numb.Next(-1000, 1000);
             }
         }
     }
