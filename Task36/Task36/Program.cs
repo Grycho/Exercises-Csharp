@@ -10,9 +10,12 @@ namespace Task36
              *the span of the set (difference between the maximum and minimum).*/
 
             Random Numb = new();
-            int[] tab = new int[1000];
+            int[] tab = new int[1000], Min, Max;
 
-
+            for (int i = 0; i < 1000; i++)
+            {
+                tab[i] = Numb.Next(-20000, 20000);
+            }
         }
     }
 }
