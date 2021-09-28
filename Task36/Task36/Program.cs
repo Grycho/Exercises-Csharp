@@ -10,10 +10,10 @@ namespace Task36
              *separately the sum of even cells from even and odd cells with odd indices.*/
 
             Random Numb = new();
-            int[] even = new int[2];
-            int[] odd = new int[2];
+            int[] even = new int[4];
+            int[] odd = new int[4];
 
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < 4; i++)
             {
                 Console.WriteLine("Randoms: {0}", even[i] = 2 * Numb.Next(-1000, 1000));
                 Console.WriteLine("Randoms: {0}", odd[i] = 1 + 2 * Numb.Next(-1000, 1000));
