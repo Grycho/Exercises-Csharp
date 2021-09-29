@@ -16,7 +16,7 @@ namespace Task38
             {
                 Remembered += Word[i];
             }
-            Console.WriteLine("Remember: " + Remembered);
+            Console.WriteLine(Remembered);
         }
     }
 }
