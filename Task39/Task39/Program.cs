@@ -17,11 +17,11 @@ namespace Task39
             }
             if (Word == Palindrome)
             {
-                Console.WriteLine();
+                Console.WriteLine("\nThis is a PALINDROME");
             }
             else
             {
-                Console.WriteLine();
+                Console.WriteLine("\nIt's NOT a palindrome");
             }
         }
     }
