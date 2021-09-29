@@ -23,7 +23,7 @@ namespace Task41
         {
             public string BrandPhone, ModelPhoneName;
             public int YearPhone, Megapixels;
-            public double ScreenDiagonal;
+            public double ScreenSize;
         }
         static void Main(string[] args)
         {
@@ -76,7 +76,7 @@ namespace Task41
             Console.WriteLine("How many megapixels: ");
             Smartphone.Megapixels = int.Parse(Console.ReadLine());
             Console.WriteLine("What a screen size: ");
-            Smartphone.ScreenDiagonal = double.Parse(Console.ReadLine());
+            Smartphone.ScreenSize = double.Parse(Console.ReadLine());
 
         }
     }
