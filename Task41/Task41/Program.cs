@@ -16,7 +16,7 @@ namespace Task41
         }
         struct DataBook
         {
-            public string AuthorName, AuthorSurname, Title, CoverType;
+            public string Title, AuthorName, AuthorSurname, CoverType;
             public int HowManyPages;
         }
         static void Main(string[] args)
@@ -47,6 +47,18 @@ namespace Task41
             Car.YearProduct = int.Parse(Console.ReadLine());
             Console.Write("Engine capacity: ");
             Car.EngineCapacity = int.Parse(Console.ReadLine());
+
+            DataBook Book;
+            Console.Write("\nThe title of your favorite book: ");
+            Book.Title = Console.ReadLine();
+            Console.Write("The name of the author: ");
+            Book.AuthorName = Console.ReadLine();
+            Console.Write("The surname of the author: ");
+            Book.AuthorSurname = Console.ReadLine();
+            Console.Write("What kind of book cover(hard/soft): ");
+            Book.CoverType = Console.ReadLine();
+            Console.Write("How many pages: ");
+            Book.HowManyPages = int.Parse(Console.ReadLine());
 
         }
     }
