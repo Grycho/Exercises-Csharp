@@ -11,13 +11,19 @@ namespace Task41
         }
         struct DataCar
         {
-            public string Brand, ModelName, Color;
-            public int YearProduct, EngineCapacity; 
+            public string BrandCar, ModelCarName, Color;
+            public int YearProductCar, EngineCapacity; 
         }
         struct DataBook
         {
             public string Title, AuthorName, AuthorSurname, CoverType;
             public int HowManyPages;
+        }
+        struct DataPhone
+        {
+            public string BrandPhone, ModelPhoneName;
+            public int YearPhone, Megapixels;
+            public double ScreenDiagonal;
         }
         static void Main(string[] args)
         {
@@ -38,13 +44,13 @@ namespace Task41
 
             DataCar Car;
             Console.Write("\nVehicle brand: ");
-            Car.Brand = Console.ReadLine();
+            Car.BrandCar = Console.ReadLine();
             Console.Write("Model name: ");
-            Car.ModelName = Console.ReadLine();
+            Car.ModelCarName = Console.ReadLine();
             Console.Write("Color: ");
             Car.Color = Console.ReadLine();
             Console.Write("Year of production: ");
-            Car.YearProduct = int.Parse(Console.ReadLine());
+            Car.YearProductCar = int.Parse(Console.ReadLine());
             Console.Write("Engine capacity: ");
             Car.EngineCapacity = int.Parse(Console.ReadLine());
 
@@ -59,6 +65,8 @@ namespace Task41
             Book.CoverType = Console.ReadLine();
             Console.Write("How many pages: ");
             Book.HowManyPages = int.Parse(Console.ReadLine());
+
+            
 
         }
     }
