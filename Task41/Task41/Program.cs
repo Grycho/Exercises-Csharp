@@ -31,6 +31,17 @@ namespace Task41
             Console.Write("Height: ");
             Person.Height = int.Parse(Console.ReadLine());
 
+            DataCar Car;
+            Console.Write("\nVehicle brand: ");
+            Car.Brand = Console.ReadLine();
+            Console.Write("Model name: ");
+            Car.ModelName = Console.ReadLine();
+            Console.Write("Color: ");
+            Car.Color = Console.ReadLine();
+            Console.Write("Year of production: ");
+            Car.YearProduct = int.Parse(Console.ReadLine());
+            Console.Write("Engine capacity: ");
+            Car.EngineCapacity = int.Parse(Console.ReadLine());
 
         }
     }
