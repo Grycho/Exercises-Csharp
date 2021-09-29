@@ -6,6 +6,7 @@ namespace Task40
     {
         static void Main(string[] args)
         {
+            //Program loads 10 subtitles and displays them from the end.
             string[] Words = new string[10];
 
             for (int i = 0; i < 10; i++)
