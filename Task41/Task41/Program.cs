@@ -9,6 +9,11 @@ namespace Task41
             public string Name, Surname, Gender;
             public int Age, Height;
         }
+        struct DataCar
+        {
+            public string Brand, ModelName, Color;
+            public int YearProduct, EngineCapacity; 
+        }
         static void Main(string[] args)
         {
             /*[Structures]The program will read data about any object, each object described with 5 parameters. 
@@ -25,6 +30,8 @@ namespace Task41
             Person.Age = int.Parse(Console.ReadLine());
             Console.Write("Height: ");
             Person.Height = int.Parse(Console.ReadLine());
+
+
         }
     }
 }
