@@ -10,6 +10,19 @@ namespace Task39
 
             string Word, Palindrome="";
             Word = Console.ReadLine();
+
+            for (int i = Word.Length-1; i >= 0; i--)
+            {
+                Palindrome += Word[i];
+            }
+            if (Word == Palindrome)
+            {
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine();
+            }
         }
     }
 }
