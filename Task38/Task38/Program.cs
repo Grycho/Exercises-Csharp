@@ -6,10 +6,17 @@ namespace Task38
     {
         static void Main(string[] args)
         {
-            //Program remembers the inverted inscription
+            //Program remembers the inverted inscription.
+            //Tip: "Consecutive letters should be attached to the inscription,
+            //starting with the final one."
 
             string Word, Remembered = "";
-
+            Word = Console.ReadLine();
+            for (int i = Word.Length - 1; i >= 0; i--)
+            {
+                Remembered += Word[i];
+            }
+            Console.WriteLine("Remember: " + Remembered);
         }
     }
 }
