@@ -14,6 +14,11 @@ namespace Task41
             public string Brand, ModelName, Color;
             public int YearProduct, EngineCapacity; 
         }
+        struct DataBook
+        {
+            public string AuthorName, AuthorSurname, Title, CoverType;
+            public int HowManyPages;
+        }
         static void Main(string[] args)
         {
             /*[Structures]The program will read data about any object, each object described with 5 parameters. 
