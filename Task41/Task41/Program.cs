@@ -66,7 +66,17 @@ namespace Task41
             Console.Write("How many pages: ");
             Book.HowManyPages = int.Parse(Console.ReadLine());
 
-            
+            DataPhone Smartphone;
+            Console.WriteLine("\nSmartphone's brand: ");
+            Smartphone.BrandPhone = Console.ReadLine();
+            Console.WriteLine("Smartphone's model name:");
+            Smartphone.ModelPhoneName = Console.ReadLine();
+            Console.WriteLine("Year of purchase: ");
+            Smartphone.YearPhone = int.Parse(Console.ReadLine());
+            Console.WriteLine("How many megapixels: ");
+            Smartphone.Megapixels = int.Parse(Console.ReadLine());
+            Console.WriteLine("What a screen size: ");
+            Smartphone.ScreenDiagonal = double.Parse(Console.ReadLine());
 
         }
     }
