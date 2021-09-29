@@ -13,7 +13,10 @@ namespace Task40
             {
                 Words[i] = Console.ReadLine();
             }
-
+            for (int i = 9; i >= 0; i--)
+            {
+                Console.WriteLine(Words[i]);
+            }
         }
     }
 }
