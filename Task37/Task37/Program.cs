@@ -6,7 +6,7 @@ namespace Task37
     {
         static void Main(string[] args)
         {
-            //Program prints the loaded string from the end
+            //[Palindrome]Program prints the loaded string from the end
 
             string Word;
             Word = Console.ReadLine();
