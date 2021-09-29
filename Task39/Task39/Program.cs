@@ -23,6 +23,7 @@ namespace Task39
             {
                 Console.WriteLine("\nIt's NOT a palindrome");
             }
+            Console.WriteLine(Palindrome);
         }
     }
 }
