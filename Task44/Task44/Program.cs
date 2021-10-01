@@ -17,7 +17,16 @@ namespace Task44
 
             if (Quant1 == true && Quant2 == true)
             {
-
+                try
+                {
+                    Sum = Numb1 / Numb2;
+                }
+                catch (DivideByZeroException)
+                {
+                    Console.WriteLine("A runtime error has occurred");
+                    Error = true;
+                }
+                if (!Error) Console.WriteLine((double)Numb1/Numb2);
             }
         }
     }
