@@ -17,7 +17,7 @@ namespace Task43
                 for (int y = 0; y < 15; y++)
                 {
                     tab[x, y] = Numb.Next(-100, 100);
-                    Console.WriteLine("{0} \t", tab[x, y]);
+                    Console.Write("{0} \t", tab[x, y]);
                 }
                 Console.WriteLine();
             }
@@ -26,12 +26,15 @@ namespace Task43
             {
                 for (int y = 0; y < 15; y++)
                 {
-                    MaxValue = tab[x, y];
-                    MaxX = x;
-                    MaxY = y;
+                    if (MaxValue< tab[x, y])
+                    {
+                        MaxValue = tab[x, y];
+                        MaxX = x;
+                        MaxY = y;
+                    }
                 }
             }
-            Console.WriteLine("Maximum value {0} in a cell with coordinates [{1},{2}]", MaxValue, MaxX, MaxY);
+            Console.WriteLine("\nMaximum value {0} in a cell with coordinates [{1},{2}]", MaxValue, MaxX, MaxY);
         }
     }
 }
