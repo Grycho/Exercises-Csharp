@@ -14,6 +14,15 @@ namespace Task42
             {
                 for (int y = 0; y < 10; y++)
                 {
+                    tab[x, y] = Numb.Next(-100, 100);
+                    Console.WriteLine("{0} \t", tab[x, y]);
+                }
+                Console.WriteLine();
+            }
+            for (int y = 0; y < 10; y++)
+            {
+                for (int x = 0; x < length; x++)
+                {
 
                 }
             }
