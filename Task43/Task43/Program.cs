@@ -21,7 +21,14 @@ namespace Task43
                 }
                 Console.WriteLine();
             }
+            int MaxX = 0, MaxY = 0, MaxValue = tab[0, 0];
+            for (int y = 0; y < 15; y++)
+            {
+                for (int x = 0; x < 15; x++)
+                {
 
+                }
+            }
         }
     }
 }
