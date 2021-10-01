@@ -21,10 +21,12 @@ namespace Task42
             }
             for (int y = 0; y < 10; y++)
             {
-                for (int x = 0; x < length; x++)
+                int Sum = 0;
+                for (int x = 0; x < 10; x++)
                 {
-
+                    Sum += tab[x, y];
                 }
+                Console.WriteLine("{0} \t", Sum);
             }
         }
     }
