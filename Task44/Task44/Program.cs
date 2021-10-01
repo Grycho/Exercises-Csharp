@@ -8,18 +8,16 @@ namespace Task44
         {
             //Program error catching
 
-            bool Error = false;
-            double Sum;
-            bool Quant1, Quant2;
+            bool Quant1, Quant2, Error = false;
             Console.Write("First number: ");
             Quant1 = int.TryParse(Console.ReadLine(), out int Numb1);
             Console.Write("Second number: ");
             Quant2 = int.TryParse(Console.ReadLine(), out int Numb2);
-
             if (Quant1 == true && Quant2 == true)
             {
                 try
                 {
+                    double Sum;
                     Sum = Numb1 / Numb2;
                 }
                 catch (DivideByZeroException)
