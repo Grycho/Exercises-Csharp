@@ -17,11 +17,15 @@ namespace Task45
                 return Value;
             }
             int Numb1, Numb2, Numb3, Numb4;
+            Console.WriteLine("First coordinate: ");
             Numb1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("First coordinate: ");
             Numb2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("First coordinate: ");
             Numb3 = int.Parse(Console.ReadLine());
+            Console.WriteLine("First coordinate: ");
             Numb4 = int.Parse(Console.ReadLine());
-            Console.WriteLine();
+            Console.WriteLine("\nResult: {0}", LengthSection(Numb1, Numb2, Numb3, Numb4));
         }
     }
 }
