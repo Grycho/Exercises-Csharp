@@ -22,13 +22,11 @@ namespace Task41
         struct DataPhone
         {
             public string BrandPhone, ModelPhoneName;
-            public int YearPhone, Megapixels;
-            public double ScreenSize;
+            public int YearPhone, Megapixels, WeightPhone;
         }
         static void Main(string[] args)
         {
-            /*[Structures]The program will read data about any object, each object described with 5 parameters. 
-             *The program can enter descriptions of 4 objects and displays them from the end*/
+            //[Structures]The program will read data about any object, each object described with 5 parameters. 
 
             DataHuman Person;
             Console.Write("Name: ");
@@ -67,17 +65,16 @@ namespace Task41
             Book.HowManyPages = int.Parse(Console.ReadLine());
 
             DataPhone Smartphone;
-            Console.WriteLine("\nSmartphone's brand: ");
+            Console.Write("\nSmartphone's brand: ");
             Smartphone.BrandPhone = Console.ReadLine();
-            Console.WriteLine("Smartphone's model name:");
+            Console.Write("Smartphone's model name:");
             Smartphone.ModelPhoneName = Console.ReadLine();
-            Console.WriteLine("Year of purchase: ");
+            Console.Write("Year of purchase: ");
             Smartphone.YearPhone = int.Parse(Console.ReadLine());
-            Console.WriteLine("How many megapixels: ");
+            Console.Write("How many megapixels: ");
             Smartphone.Megapixels = int.Parse(Console.ReadLine());
-            Console.WriteLine("What a screen size: ");
-            Smartphone.ScreenSize = double.Parse(Console.ReadLine());
-
+            Console.Write("What a weight: ");
+            Smartphone.WeightPhone = int.Parse(Console.ReadLine());
         }
     }
 }
