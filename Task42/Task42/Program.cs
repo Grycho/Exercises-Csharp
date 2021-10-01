@@ -15,7 +15,7 @@ namespace Task42
                 for (int y = 0; y < 10; y++)
                 {
                     tab[x, y] = Numb.Next(-100, 100);
-                    Console.WriteLine("{0} \t", tab[x, y]);
+                    Console.Write("{0} \t", tab[x, y]);
                 }
                 Console.WriteLine();
             }
@@ -26,7 +26,7 @@ namespace Task42
                 {
                     Sum += tab[x, y];
                 }
-                Console.WriteLine("{0} \t", Sum);
+                Console.Write("{0} \t", Sum);
             }
         }
     }
