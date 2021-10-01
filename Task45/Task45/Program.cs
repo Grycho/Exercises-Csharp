@@ -11,7 +11,10 @@ namespace Task45
 
             double LengthSection(int x1, int y1, int x2, int y2)
             {
-
+                double Value;
+                Value = Math.Abs(x2 - x2) * Math.Abs(x2 - x1) + Math.Abs(y1 - y2) * Math.Abs(y1 - y2);
+                Value = Math.Sqrt(Value);
+                return Value;
             }
         }
     }
