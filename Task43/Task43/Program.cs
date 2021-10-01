@@ -22,13 +22,16 @@ namespace Task43
                 Console.WriteLine();
             }
             int MaxX = 0, MaxY = 0, MaxValue = tab[0, 0];
-            for (int y = 0; y < 15; y++)
+            for (int x = 0; x < 15; x++)
             {
-                for (int x = 0; x < 15; x++)
+                for (int y = 0; y < 15; y++)
                 {
-
+                    MaxValue = tab[x, y];
+                    MaxX = x;
+                    MaxY = y;
                 }
             }
+            Console.WriteLine("Maximum value {0} in a cell with coordinates [{1},{2}]", MaxValue, MaxX, MaxY);
         }
     }
 }
