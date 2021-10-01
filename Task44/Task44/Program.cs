@@ -11,9 +11,9 @@ namespace Task44
             bool Error = false;
             double Sum;
             bool Quant1, Quant2;
-            Console.Write("Enter first number: ");
+            Console.Write("First number: ");
             Quant1 = int.TryParse(Console.ReadLine(), out int Numb1);
-            Console.Write("Enter second number: ");
+            Console.Write("Second number: ");
             Quant2 = int.TryParse(Console.ReadLine(), out int Numb2);
 
             if (Quant1 == true && Quant2 == true)
@@ -24,10 +24,10 @@ namespace Task44
                 }
                 catch (DivideByZeroException)
                 {
-                    Console.WriteLine("A runtime error has occurred");
+                    Console.WriteLine("\nA runtime error has occurred");
                     Error = true;
                 }
-                if (!Error) Console.WriteLine("Result: {0}", (double)Numb1/Numb2);
+                if (!Error) Console.WriteLine("\nResult: {0}", (double)Numb1/Numb2);
             }
         }
     }
