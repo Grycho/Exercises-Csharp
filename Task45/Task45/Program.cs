@@ -16,6 +16,12 @@ namespace Task45
                 Value = Math.Sqrt(Value);
                 return Value;
             }
+            int Numb1, Numb2, Numb3, Numb4;
+            Numb1 = int.Parse(Console.ReadLine());
+            Numb2 = int.Parse(Console.ReadLine());
+            Numb3 = int.Parse(Console.ReadLine());
+            Numb4 = int.Parse(Console.ReadLine());
+            Console.WriteLine();
         }
     }
 }
