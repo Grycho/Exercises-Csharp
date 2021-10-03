@@ -18,6 +18,10 @@ namespace Task46
                 }
                 return Value;
             }
+            int Numb;
+            Console.Write("Enter a number: ");
+            Numb = int.Parse(Console.ReadLine());
+            Console.WriteLine("\nResult: " + NumberDigits(Numb));
         }
     }
 }
