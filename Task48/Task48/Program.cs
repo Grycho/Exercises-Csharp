@@ -30,7 +30,13 @@ namespace Task48
             int NumberCell = int.Parse(Console.ReadLine());
             bool[,] arr = new bool[NumberCell, NumberCell];
 
+            for (int i = 0; i < NumberCell; i++)
+            {
+                for (int j = 0; j < NumberCell; j++)
+                {
 
+                }
+            }
         }
     }
 }
