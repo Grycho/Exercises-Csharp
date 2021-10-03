@@ -8,7 +8,7 @@ namespace Task46
         {
             //Write a NumberDigits function that returns the number of digits in an integer
 
-            int NumberDigits(int x)
+            static int NumberDigits(int x)
             {
                 int Value = 0;
                 while (x!= 0)
