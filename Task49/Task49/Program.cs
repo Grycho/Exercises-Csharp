@@ -12,8 +12,13 @@ namespace Task49
             {
                 double AreaResult;
                 AreaResult = 0.5 * (Length + Width) * Height;
-                Console.WriteLine("\nArea of the trapezoid is: ");
+                Console.WriteLine("\nArea of the trapezoid is: " + AreaResult);
             }
+            int Numb1, Numb2, Numb3;
+            Numb1 = int.Parse(Console.ReadLine());
+            Numb2 = int.Parse(Console.ReadLine());
+            Numb3 = int.Parse(Console.ReadLine());
+            Area(Numb1, Numb2, Numb3);
         }
     }
 }
