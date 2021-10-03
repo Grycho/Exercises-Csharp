@@ -21,7 +21,7 @@ namespace Task46
             int Numb;
             Console.Write("Enter a number: ");
             Numb = int.Parse(Console.ReadLine());
-            Console.WriteLine("\nResult: " + NumberDigits(Numb));
+            Console.WriteLine("\nResult: {0}", NumberDigits(Numb));
         }
     }
 }
