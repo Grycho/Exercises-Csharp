@@ -15,7 +15,14 @@ namespace Task48
              * on the screen, the "+" sign should be displayed for the true value, 
              * and the sign for the false value is "." */
 
-
+            bool RelativelyFirst(int NumberCells, int x)
+            {
+                while (NumberCells != x)
+                {
+                    if (NumberCells > x) NumberCells -= x;
+                    else x -= NumberCells;
+                }
+            }
         }
     }
 }
