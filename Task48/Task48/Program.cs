@@ -26,6 +26,11 @@ namespace Task48
                 else return false;
             }
 
+            Console.WriteLine("Enter the number of cells: ");
+            int NumberCell = int.Parse(Console.ReadLine());
+            bool[,] arr = new bool[NumberCell, NumberCell];
+
+
         }
     }
 }
