@@ -4,7 +4,7 @@ namespace Task47
 {
     class Program
     {
-        struct Coin
+        struct Coins
         {
             public int Coin1, Coin2, Coin5, Bankn10;
         }
@@ -14,16 +14,20 @@ namespace Task47
              * into the smallest possible amount of coins and banknotes with 
              * the denominations of 1, 2, 5, 10 PLN*/
 
-            Coin Banknotes(int x)
+            Coins Banknotes(int x)
             {
-                Coin Value;
+                Coins Value;
                 Value.Bankn10 = x / 10; x %= 10;
                 Value.Coin5 = x / 10; x %= 5;
                 Value.Coin2 = x / 2; x %= 2;
                 Value.Coin1 = x / 1;
                 return Value;
             }
-
+            int Numb;
+            Console.WriteLine("Enter the amount: ");
+            Numb = int.Parse(Console.ReadLine());
+            Coins c = Banknotes(Numb);
+            Console.WriteLine();
         }
     }
 }
