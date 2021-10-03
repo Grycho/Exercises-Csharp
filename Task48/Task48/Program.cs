@@ -15,7 +15,7 @@ namespace Task48
              * on the screen, the "+" sign should be displayed for the true value, 
              * and the sign for the false value is "." */
 
-            bool RelativelyFirst(int NumberCells, int x)
+            static bool RelativelyFirst(int NumberCells, int x)
             {
                 while (NumberCells != x)
                 {
@@ -26,7 +26,7 @@ namespace Task48
                 else return false;
             }
 
-            Console.WriteLine("Enter the number of cells: ");
+            Console.Write("Enter the number (> 0): ");
             int Numb = int.Parse(Console.ReadLine());
             bool[,] arr = new bool[Numb, Numb];
 
@@ -36,6 +36,15 @@ namespace Task48
                 {
                     arr[i, j] = RelativelyFirst(i + 1, j + 1);
                 }
+            }
+            for (int i = 0; i < Numb; i++)
+            {
+                for (int j = 0; j < Numb; j++)
+                {
+                    if (arr[i, j]) Console.Write("+ ");
+                    else Console.Write(". ");
+                }
+                Console.WriteLine();
             }
         }
     }
