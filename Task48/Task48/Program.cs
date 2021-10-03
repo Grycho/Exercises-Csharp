@@ -27,14 +27,14 @@ namespace Task48
             }
 
             Console.WriteLine("Enter the number of cells: ");
-            int NumberCell = int.Parse(Console.ReadLine());
-            bool[,] arr = new bool[NumberCell, NumberCell];
+            int Numb = int.Parse(Console.ReadLine());
+            bool[,] arr = new bool[Numb, Numb];
 
-            for (int i = 0; i < NumberCell; i++)
+            for (int i = 0; i < Numb; i++)
             {
-                for (int j = 0; j < NumberCell; j++)
+                for (int j = 0; j < Numb; j++)
                 {
-
+                    arr[i, j] = RelativelyFirst(i + 1, j + 1);
                 }
             }
         }
