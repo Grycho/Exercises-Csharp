@@ -14,6 +14,16 @@ namespace Task47
              * into the smallest possible amount of coins and banknotes with 
              * the denominations of 1, 2, 5, 10 PLN*/
 
+            Coin Banknotes(int x)
+            {
+                Coin Value;
+                Value.Bankn10 = x / 10; x %= 10;
+                Value.Coin5 = x / 10; x %= 5;
+                Value.Coin2 = x / 2; x %= 2;
+                Value.Coin1 = x / 1;
+                return Value;
+            }
+
         }
     }
 }
