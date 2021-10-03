@@ -27,7 +27,7 @@ namespace Task47
             Console.WriteLine("Enter the amount: ");
             Numb = int.Parse(Console.ReadLine());
             Coins c = Banknotes(Numb);
-            Console.WriteLine();
+            Console.WriteLine("\nAmount of coins: 1PLN={0}, 2PLN={1}, 5PLN={2} and banknotes: 10PLN={3}", c.Coin1, c.Coin2, c.Coin5, c.Bankn10);
         }
     }
 }
