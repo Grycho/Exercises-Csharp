@@ -22,7 +22,10 @@ namespace Task48
                     if (NumberCells > x) NumberCells -= x;
                     else x -= NumberCells;
                 }
+                if (NumberCells == 1) return true;
+                else return false;
             }
+
         }
     }
 }
