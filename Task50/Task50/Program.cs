@@ -24,7 +24,7 @@ namespace Task50
             {
                 Console.Write("{0} ", Element);
             }
-            Console.Write("Equal: {0}", average);
+            Console.Write("Equal: {0}", Math.Round(average, 2));
         }
 
         static void Main(string[] args)
