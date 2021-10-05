@@ -18,6 +18,12 @@ namespace Task50
             {
                 Sum += Element;
             }
+            average = Sum / HowMany;
+            Console.Write("Average of the numbers: ");
+            foreach (var item in collection)
+            {
+
+            }
         }
 
         static void Main(string[] args)
