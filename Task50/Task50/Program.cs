@@ -43,6 +43,7 @@ namespace Task50
                     Console.WriteLine("Invalid value. Give it again!");
                 }
             }
+            Average(Tab, Numb);
         }
     }
 }
