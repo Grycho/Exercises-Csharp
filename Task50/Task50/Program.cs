@@ -35,6 +35,8 @@ namespace Task50
             {
                 Console.WriteLine("Wrong quantity. Try again!");
             }
+            int[] Tab = new int[Numb];
+
         }
     }
 }
