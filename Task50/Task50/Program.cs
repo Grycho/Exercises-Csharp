@@ -20,9 +20,9 @@ namespace Task50
             }
             average = Sum / HowMany;
             Console.Write("Average of the numbers: ");
-            foreach (var Element in tab)
+            foreach (var Number in tab)
             {
-                Console.Write("{0} ", Element);
+                Console.Write("{0} ", Number);
             }
             Console.Write("Equal: {0}", Math.Round(average, 2));
         }
