@@ -22,9 +22,9 @@ namespace Task50
             Console.Write("Average of the numbers: ");
             foreach (var Element in tab)
             {
-                Console.WriteLine(Element);
+                Console.Write("{0} ", Element);
             }
-            Console.WriteLine("Equal: {0}", average);
+            Console.Write("Equal: {0}", average);
         }
 
         static void Main(string[] args)
