@@ -13,7 +13,11 @@ namespace Task50
              * The average of the numbers 1 2 3 4 5 6 is 3.5 */
             //Program must be protected against division by 0 and entering incorrect values
 
-
+            double Sum = 0, average;
+            foreach (var Element in tab)
+            {
+                Sum += Element;
+            }
         }
 
         static void Main(string[] args)
