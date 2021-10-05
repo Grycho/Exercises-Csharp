@@ -31,7 +31,10 @@ namespace Task50
         {
             Console.Write("Enter how many numbers: ");
             int Numb;
-
+            while (!int.TryParse(Console.ReadLine(), out Numb) || Numb <= 0)
+            {
+                Console.WriteLine("Wrong quantity. Try again!");
+            }
         }
     }
 }
