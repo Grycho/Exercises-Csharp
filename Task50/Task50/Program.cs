@@ -20,14 +20,17 @@ namespace Task50
             }
             average = Sum / HowMany;
             Console.Write("Average of the numbers: ");
-            foreach (var item in collection)
+            foreach (var Element in tab)
             {
-
+                Console.WriteLine(Element);
             }
+            Console.WriteLine("Equal: {0}", average);
         }
 
         static void Main(string[] args)
         {
+            Console.Write("Enter how many numbers: ");
+            int Numb;
 
         }
     }
