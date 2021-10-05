@@ -38,7 +38,10 @@ namespace Task50
             int[] Tab = new int[Numb];
             for (int i = 0; i < Numb; i++)
             {
-
+                while(!int.TryParse(Console.ReadLine(), out Tab[i]))
+                {
+                    Console.WriteLine("Invalid value. Give it again!");
+                }
             }
         }
     }
