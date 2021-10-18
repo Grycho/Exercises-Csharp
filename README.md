@@ -85,3 +85,23 @@ Mainly console applications.
 - Check if the string is a *palindrome*
 ### Task40
 - Program loads 10 subtitles and displays them from the end
+### Task41
+- [Structures]The program will read data about any object, each object described with 5 parameters
+### Task42
+- Draw a 10x10 matrix and display an array, then display the sum of each column
+### Task43
+- Draw a 15x15 matrix, display, give the maximum value and coordinates of the cell with the maximum value.
+### Task44
+- Program error catching
+### Task45
+- The program includes a function that loads two coordinates of the segment x1, y1, x2, y2 and returns the length of the segment (non-integer)
+### Task46
+- Write a NumberDigits function that returns the number of digits in an integer
+### Task47
+- Program that converts the amount of money (integer) specified by the user into the smallest possible amount of coins and banknotes with the denominations of 1, 2, 5, 10 PLN
+### Task48
+- A program that takes a positive natural number N (n < 30) from the user and creates an array 'a' of boolean variables of size n × n
+### Task49
+- Write a field function that computes a trapezoid and displays it
+### Task50
+- A program that asks the user to enter the length of a string of numbers and then reads those numbers into the array one by one.
