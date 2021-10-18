@@ -13,11 +13,19 @@ namespace Task53
             {
                 for (int i = 0; i < Numb - 1; i++)
                 {
-                    for (int j = 0; j < Numb-1-i; j++)
+                    for (int j = 0; j < Numb - 1 - i; j++)
                         Console.Write(" ");
-                    for (int j = 1; j <= 1+i*2; j++)
+                    for (int j = 1; j <= 1 + i * 2; j++)
                     {
                         Console.Write("*");
+                    }
+                    Console.WriteLine();
+                }
+                for (int i = 0; i < Numb; i++)
+                {
+                    for (int j = 0; j < Numb - 1 - i; j++)
+                    {
+
                     }
                 }
             }
