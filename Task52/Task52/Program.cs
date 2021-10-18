@@ -34,6 +34,11 @@ namespace Task52
             Console.WriteLine("How much value: ");
             int num2 = int.Parse(Console.ReadLine());
             int[] Data = new int[num2];
+            for (int i = 0; i < num2; i++)
+            {
+                Data[i] = int.Parse(Console.ReadLine());
+            }
+            Chart(Data);
         }
     }
 }
