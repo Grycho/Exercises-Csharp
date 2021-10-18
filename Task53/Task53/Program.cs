@@ -32,7 +32,7 @@ namespace Task53
                     Console.WriteLine();
                 }
             }
-            Console.Write("How many layers should the Christmas tree have: ");
+            Console.Write("How many layers should the Christmas tree have?: ");
             int Numb = int.Parse(Console.ReadLine());
             Console.WriteLine("\n");
             Tree(Numb);
