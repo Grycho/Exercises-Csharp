@@ -11,6 +11,16 @@ namespace Task53
 
             static void Tree (int Star)
             {
+                for (int i = 0; i < Star - 2; i++)
+                {
+                    for (int j = 0; j < Star - 1 - i; j++)
+                        Console.Write(" ");
+                    for (int j = 1; j <= 1 + i * 2; j++)
+                    {
+                        Console.Write("*");
+                    }
+                    Console.WriteLine();
+                }
                 for (int i = 0; i < Star - 1; i++)
                 {
                     for (int j = 0; j < Star - 1 - i; j++)
