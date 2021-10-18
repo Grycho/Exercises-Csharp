@@ -4,13 +4,15 @@ namespace Task51
 {
     class Program
     {
-        static bool Prime(int n)
+        static bool Prime(int Numb)
         {
             //A function that checks whether the given number is prime
 
-            for (int i = 2; i * i <= n; i++)
+            Console.Write("Give me a number(we will check it is a prime number): ");
+            Numb = int.Parse(Console.ReadLine());
+            for (int i = 2; i * i <= Numb; i++)
             {
-                if (n % i == 0) return false;
+                if (Numb % i == 0) return false;
             }
             return true;
         }
