@@ -16,6 +16,14 @@ namespace Task52
                 {
                     Count[Element - 1]++;
                 }
+                for (int i = 0; i < 5; i++)
+                {
+                    Console.Write(i+1+"");
+                    for (int j = 0; j < Count[i]; j++)
+                    {
+
+                    }
+                }
             }
         }
     }
