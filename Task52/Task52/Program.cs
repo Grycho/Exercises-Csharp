@@ -25,11 +25,15 @@ namespace Task52
                         if (j > 50)
                         {
                             j = Count[i] + 1;
-                            Console.Write("too many results");
+                            Console.Write("Too many results");
                         }
                     }
+                    Console.WriteLine();
                 }
             }
+            Console.WriteLine("How much value: ");
+            int num2 = int.Parse(Console.ReadLine());
+            int[] Data = new int[num2];
         }
     }
 }
