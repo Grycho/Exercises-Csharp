@@ -18,7 +18,7 @@ namespace Task52
                 }
                 for (int i = 0; i < 5; i++)
                 {
-                    Console.Write(i+1+"");
+                    Console.Write(i + 1 + " ");
                     for (int j = 0; j < Count[i]; j++)
                     {
                         Console.Write("*");
@@ -31,7 +31,7 @@ namespace Task52
                     Console.WriteLine();
                 }
             }
-            Console.WriteLine("How much value: ");
+            Console.Write("How much value: ");
             int num2 = int.Parse(Console.ReadLine());
             int[] Data = new int[num2];
             for (int i = 0; i < num2; i++)
