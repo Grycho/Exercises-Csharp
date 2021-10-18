@@ -21,7 +21,12 @@ namespace Task52
                     Console.Write(i+1+"");
                     for (int j = 0; j < Count[i]; j++)
                     {
-
+                        Console.Write("*");
+                        if (j > 50)
+                        {
+                            j = Count[i] + 1;
+                            Console.Write("too many results");
+                        }
                     }
                 }
             }
