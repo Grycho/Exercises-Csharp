@@ -62,6 +62,6 @@ namespace TranscribingFile
 
     class UploadItem
     {
-
+        public string upload_url { get; set; }
     }
 }
