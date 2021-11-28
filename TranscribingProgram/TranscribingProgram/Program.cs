@@ -53,6 +53,20 @@ namespace TranscribingFile
                 //ask the user for the ticket id
                 Console.WriteLine("please enter the ID");
                 string ticketID = Console.ReadLine();
+
+                using (HttpClient httpClient = new HttpClient())
+                {
+                    //pass the API key
+                    httpClient.DefaultRequestHeaders.Add("Authorization", API_Key);
+                    //set the header to json
+                    httpClient.DefaultRequestHeaders.Add("Accepts", "application/json");
+                    //send a get request to the transcript endpoint and add the ticketID to the url
+                    HttpResponseMessage response = await httpClient.GetAsync("https://api.assemblyai.com/v2/transcript" + ticketID);
+                    response.EnsureSuccessStatusCode();
+                    //display the data
+                    var responseJson = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine(responseJson);
+                }
             }
         }
 
