@@ -22,7 +22,21 @@ namespace TranscribingFile
         {
             try
             {
+                //new HTTP request of type post method, we will use the upload API for endpoint
+                HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, "upload");
+                //the request header
+                request.Headers.Add("Transer-Encoding", "chunked");
+                //read the file
+                var fileReader = System.IO.File.OpenRead(filePath);
+                //read the file as a stream using our file reader object
+                var streamContent = new StreamContent(fileReader);
+                //the request content to our data stream
+                request.Content = streamContent;
+                //send the request
+                HttpResponseMessage response = await client.SendAsync(request);
 
+                //return the response as a string!
+                return await response.Content.ReadAsStringAsync();
             }
             catch(Exception ex)
             {
