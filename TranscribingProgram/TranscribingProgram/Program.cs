@@ -12,8 +12,10 @@ namespace TranscribingFile
         {
             //HttpClient is normally created once, then used for all message sending
             HttpClient client = new HttpClient();
-            //set the base address for the API endpoint
+            //the base address for the API endpoint
             client.BaseAddress = new Uri("https://api.assemblyai.com/v2/");
+            //the request header
+            client.DefaultRequestHeaders.Add("authorization", API_Key);
         }
     }
 }
