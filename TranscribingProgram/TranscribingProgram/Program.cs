@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 
@@ -30,6 +31,12 @@ namespace TranscribingFile
             //the request header
             client.DefaultRequestHeaders.Add("authorization", API_Key);
 
+            var json = new { audio_url = JsonConvert.DeserializeObject<UploadItem>(jsonResult).upload_url };
+
+            //create a string content from JSON
+            StringContent payload = new StringContent(JsonConvert.SerializeObject(json), Encoding.UTF8, "application/json");
+
+            
         }
 
         private static async Task<string> SendFile(HttpClient client, string filePath)
