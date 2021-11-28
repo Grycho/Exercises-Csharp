@@ -36,7 +36,9 @@ namespace TranscribingFile
             //create a string content from JSON
             StringContent payload = new StringContent(JsonConvert.SerializeObject(json), Encoding.UTF8, "application/json");
 
-            
+            HttpResponseMessage response = await client.PostAsync("https://api.assemblyai.com/v2/transcript", payload);
+            //throw an exception if the request did not go through
+            response.EnsureSuccessStatusCode();
         }
 
         private static async Task<string> SendFile(HttpClient client, string filePath)
