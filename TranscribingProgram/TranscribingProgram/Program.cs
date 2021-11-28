@@ -17,5 +17,18 @@ namespace TranscribingFile
             //the request header
             client.DefaultRequestHeaders.Add("authorization", API_Key);
         }
+
+        private static async Task<string> SendFile(HttpClient client, string filePath)
+        {
+            try
+            {
+
+            }
+            catch(Exception ex)
+            {
+                System.Console.WriteLine($"Exception: {ex.Message}");
+                throw;
+            }
+        }
     }
 }
