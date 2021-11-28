@@ -16,6 +16,10 @@ namespace TranscribingFile
             client.BaseAddress = new Uri("https://api.assemblyai.com/v2/");
             //the request header
             client.DefaultRequestHeaders.Add("authorization", API_Key);
+
+            string jsonResult = SendFile(client, @"E:\Moje wszystko\VOICE zrzucone na BADANIA TERENOWE\FOLDER01\01_10_2021_Nadlesnictwo_Miedzylesie_Alan_Rumin_rozm_tel.mp3").Result;
+
+            Console.WriteLine(jsonResult);
         }
 
         private static async Task<string> SendFile(HttpClient client, string filePath)
