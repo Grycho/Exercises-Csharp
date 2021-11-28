@@ -13,35 +13,47 @@ namespace TranscribingFile
 
         static async Task Main(string[] args)
         {
-            //HttpClient is normally created once, then used for all message sending
-            HttpClient client = new HttpClient();
-            //the base address for the API endpoint
-            client.BaseAddress = new Uri("https://api.assemblyai.com/v2/");
-            //the request header
-            client.DefaultRequestHeaders.Add("authorization", API_Key);
+            Console.WriteLine("Please Select 1. to send the file.");
+            Console.WriteLine("Please Select 2. to check if it's ready.");
 
-            string jsonResult = SendFile(client, @"E:\Moje wszystko\VOICE_B_T\FOLDER01\01_10_2021_N_M.mp3").Result;
+            if (Console.ReadLine() == "1")
+            {
+                //HttpClient is normally created once, then used for all message sending
+                HttpClient client = new HttpClient();
+                //the base address for the API endpoint
+                client.BaseAddress = new Uri("https://api.assemblyai.com/v2/");
+                //the request header
+                client.DefaultRequestHeaders.Add("authorization", API_Key);
 
-            Console.WriteLine(jsonResult);
+                string jsonResult = SendFile(client, @"E:\Moje wszystko\VOICE_B_T\FOLDER01\01_10_2021_N_M.mp3").Result;
 
-            client.Dispose();
-            client = new HttpClient();
-            //the base address for the API endpoint
-            client.BaseAddress = new Uri("https://api.assemblyai.com/v2/");
-            //the request header
-            client.DefaultRequestHeaders.Add("authorization", API_Key);
+                Console.WriteLine(jsonResult);
 
-            var json = new { audio_url = JsonConvert.DeserializeObject<UploadItem>(jsonResult).upload_url };
+                client.Dispose();
+                client = new HttpClient();
+                //the base address for the API endpoint
+                client.BaseAddress = new Uri("https://api.assemblyai.com/v2/");
+                //the request header
+                client.DefaultRequestHeaders.Add("authorization", API_Key);
 
-            //create a string content from JSON
-            StringContent payload = new StringContent(JsonConvert.SerializeObject(json), Encoding.UTF8, "application/json");
+                var json = new { audio_url = JsonConvert.DeserializeObject<UploadItem>(jsonResult).upload_url };
 
-            HttpResponseMessage response = await client.PostAsync("https://api.assemblyai.com/v2/transcript", payload);
-            //throw an exception if the request did not go through
-            response.EnsureSuccessStatusCode();
+                //create a string content from JSON
+                StringContent payload = new StringContent(JsonConvert.SerializeObject(json), Encoding.UTF8, "application/json");
 
-            var responseJson = await response.Content.ReadAsStringAsync();
-            Console.WriteLine(responseJson);
+                HttpResponseMessage response = await client.PostAsync("https://api.assemblyai.com/v2/transcript", payload);
+                //throw an exception if the request did not go through
+                response.EnsureSuccessStatusCode();
+
+                var responseJson = await response.Content.ReadAsStringAsync();
+                Console.WriteLine(responseJson);
+            }
+            else
+            {
+                //ask the user for the ticket id
+                Console.WriteLine("please enter the ID");
+                string ticketID = Console.ReadLine();
+            }
         }
 
         private static async Task<string> SendFile(HttpClient client, string filePath)
