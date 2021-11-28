@@ -11,7 +11,7 @@ namespace TranscribingFile
         //api key, important for merge
         static string API_Key = "aa4f8bdce5e14cefbc538f4351f1d379";
 
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
             //HttpClient is normally created once, then used for all message sending
             HttpClient client = new HttpClient();
@@ -39,6 +39,9 @@ namespace TranscribingFile
             HttpResponseMessage response = await client.PostAsync("https://api.assemblyai.com/v2/transcript", payload);
             //throw an exception if the request did not go through
             response.EnsureSuccessStatusCode();
+
+            var responseJson = await response.Content.ReadAsStringAsync();
+            Console.WriteLine(responseJson);
         }
 
         private static async Task<string> SendFile(HttpClient client, string filePath)
